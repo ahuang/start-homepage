@@ -1,4 +1,20 @@
 
-.normal {
-  background: #79F2AA;
+body{
+  background:  #186686;
+  margin:0;
+  padding:0;
+}
+.wrap {
+  margin:5vh 16vw 10vh 16vw;
+  color: #fff;
+}
+
+.wrap .blocks{
+  margin-bottom: 10px;
+}
+
+.wrap .url {
+  color: darkkhaki;
+  margin-right: 10px;
+
 }

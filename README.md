@@ -1,3 +1,10 @@
-# test-gh-pages
-https://github.com/sorrycc/test-gh-pages
-https://sorrycc.github.io/test-gh-pages/
+
+# development 
+npm install   
+npm run start   
+http://localhost:8000/start-homepage/   
+
+# production 
+npm install   
+npm run deploy (include build)   
+https://ahuang.github.io/start-homepage   
