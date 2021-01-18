@@ -1,0 +1,12 @@
+{
+  "private": true,
+  "scripts": {
+    "start": "umi dev",
+    "build": "umi build",
+    "deploy": "npm run build && gh-pages -d dist"
+  },  
+  "devDependencies": {
+    "umi": "2.x",
+    "umi-plugin-gh-pages": "0.x"
+  }
+}
