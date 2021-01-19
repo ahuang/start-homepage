@@ -35,6 +35,9 @@
                 "name": "stackoverflow",
                 "url": "https://stackoverflow.com"
             },{
+                "name": "InfoQ",
+                "url": "https://www.infoq.cn/"
+            },{
                 "name": "腾讯IMWeb",
                 "url": "https://imweb.io/topic/tab/all"
             },{
@@ -63,10 +66,18 @@
         "title": "工具",
         "list":[
             {
+                "name": "微信客户端",
+                "url": "https://wx2.qq.com/"
+            },{
+                "name": "微软翻译",
+                "url": "https://cn.bing.com/translator"
+            },{
+                "name": "有道翻译",
+                "url": "http://fanyi.youdao.com/?keyfrom=dict2.index"
+            },{
                 "name": "github",
                 "url": "https://www.github.com/"
-            },
-            {
+            },{
                 "name": "阿里矢量图库",
                 "url": "https://www.iconfont.cn/?spm=a313x.7781069.1998910419.d4d0a486a"
             }
