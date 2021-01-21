@@ -5,19 +5,25 @@
         "list":[
             {
                 "name": "微博热搜榜",
-                "url": "https://s.weibo.com/top/summary"
+                "url": "https://s.weibo.com/top/summary",
+                "icon": "weibo.png"
             },{
                 "name": "byr",
-                "url": "https://bbs.byr.cn/#!board/WWWTechnology"
+                "url": "https://bbs.byr.cn/#!board/WWWTechnology",
+                "icon": "byr.png"
             },{
                 "name": "36氪",
-                "url": "https://36kr.com/newsflashes"
+                "url": "https://36kr.com/newsflashes",
+                "icon": "36kr.png"
             },{
                 "name": "本地宝",
-                "url": "http://hz.bendibao.com/"
+                "url": "http://hz.bendibao.com/",
+                "icon": "bendibao.png"
+                
             },{
                 "name": "19楼",
-                "url": "https://www.19lou.com/"
+                "url": "https://www.19lou.com/",
+                "icon": "19lou.png"
             }
         ]
     },
@@ -27,37 +33,48 @@
         "list":[
             {
                 "name": "必应",
-                "url": "http://cn.bing.com/"
+                "url": "http://cn.bing.com/",
+                "icon": "bing.png"
             },{
                 "name": "百度",
-                "url": "www.baidu.com"
+                "url": "https://www.baidu.com/",
+                "icon": "baidu.png"
             },{
                 "name": "stackoverflow",
-                "url": "https://stackoverflow.com"
+                "url": "https://stackoverflow.com",
+                "icon": "stackoverflow.png"
             },{
                 "name": "InfoQ",
-                "url": "https://www.infoq.cn/"
+                "url": "https://www.infoq.cn/",
+                "icon": ""
             },{
                 "name": "腾讯IMWeb",
-                "url": "https://imweb.io/topic/tab/all"
+                "url": "https://imweb.io/topic/tab/all",
+                "icon": ""
             },{
                 "name": "腾讯云",
-                "url": "https://cloud.tencent.com/developer"
+                "url": "https://cloud.tencent.com/developer",
+                "icon": ""
             },{
                 "name": "掘金",
-                "url": "https://juejin.im/"
+                "url": "https://juejin.im/",
+                "icon": ""
             },{
                 "name": "思否",
-                "url": "https://segmentfault.com/"
+                "url": "https://segmentfault.com/",
+                "icon": ""
             },{
                 "name": "知乎",
-                "url": "http://www.zhihu.com/"
+                "url": "http://www.zhihu.com/",
+                "icon": ""
             },{
                 "name": "简书",
-                "url": "http://www.jianshu.com/"
+                "url": "http://www.jianshu.com/",
+                "icon": ""
             },{
                 "name": "大漠",
-                "url": "https://www.w3cplus.com/"
+                "url": "https://www.w3cplus.com/",
+                "icon": ""
             }
         ]
     },

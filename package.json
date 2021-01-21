@@ -3,6 +3,7 @@
   "scripts": {
     "start": "umi dev",
     "build": "umi build",
+    "publish": "gh-pages -d dist",
     "deploy": "npm run build && gh-pages -d dist"
   },  
   "devDependencies": {

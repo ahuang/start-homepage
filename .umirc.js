@@ -4,4 +4,5 @@ export default {
   plugins: [
     'umi-plugin-gh-pages',
   ],
+  // publicPath: process.env.NODE_ENV === 'development' ? '/public/' : './', 
 }
