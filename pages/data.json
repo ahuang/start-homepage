@@ -8,8 +8,12 @@
                 "url": "https://s.weibo.com/top/summary",
                 "icon": "weibo.png"
             },{
+                "name": "博客园",
+                "url": "https://www.cnblogs.com/cmt",
+                "icon": "cnblog1.png"
+            },            {
                 "name": "byr",
-                "url": "https://bbs.byr.cn/#!board/WWWTechnology",
+                "url": "https://bbs.byr.cn/#!board/WorkLife",
                 "icon": "byr.png"
             },{
                 "name": "36氪",
@@ -46,35 +50,35 @@
             },{
                 "name": "InfoQ",
                 "url": "https://www.infoq.cn/",
-                "icon": ""
+                "icon": "infoq.png"
             },{
                 "name": "腾讯IMWeb",
                 "url": "https://imweb.io/topic/tab/all",
-                "icon": ""
+                "icon": "imweb.png"
             },{
                 "name": "腾讯云",
                 "url": "https://cloud.tencent.com/developer",
-                "icon": ""
+                "icon": "txcloud.png"
             },{
                 "name": "掘金",
                 "url": "https://juejin.im/",
-                "icon": ""
+                "icon": "juejin.png"
             },{
                 "name": "思否",
                 "url": "https://segmentfault.com/",
-                "icon": ""
+                "icon": "segment.png"
             },{
                 "name": "知乎",
                 "url": "http://www.zhihu.com/",
-                "icon": ""
+                "icon": "zhihu.png"
             },{
                 "name": "简书",
                 "url": "http://www.jianshu.com/",
-                "icon": ""
+                "icon": "jianshu.png"
             },{
                 "name": "大漠",
                 "url": "https://www.w3cplus.com/",
-                "icon": ""
+                "icon": "damo.png"
             }
         ]
     },
@@ -84,19 +88,24 @@
         "list":[
             {
                 "name": "微信客户端",
-                "url": "https://wx2.qq.com/"
+                "url": "https://wx2.qq.com/",
+                "icon": "weixin.png"
             },{
                 "name": "微软翻译",
-                "url": "https://cn.bing.com/translator"
+                "url": "https://cn.bing.com/translator",
+                "icon": "bing.png"
             },{
                 "name": "有道翻译",
-                "url": "http://fanyi.youdao.com/?keyfrom=dict2.index"
+                "url": "http://fanyi.youdao.com/?keyfrom=dict2.index",
+                "icon": "youdao.png"
             },{
                 "name": "github",
-                "url": "https://www.github.com/"
+                "url": "https://www.github.com/",
+                "icon": "github.png"
             },{
                 "name": "阿里矢量图库",
-                "url": "https://www.iconfont.cn/?spm=a313x.7781069.1998910419.d4d0a486a"
+                "url": "https://www.iconfont.cn/?spm=a313x.7781069.1998910419.d4d0a486a",
+                "icon": "alitool.png"
             }
         ]
     }, {
@@ -105,16 +114,20 @@
         "list":[
             {
                 "name": "小脚鸭",
-                "url": "https://www.cnblogs.com/minnie-huang/"
+                "url": "https://www.cnblogs.com/minnie-huang/",
+                "icon": "xjy.png"
             },{
                 "name": "xybaby",
-                "url": "https://www.cnblogs.com/xybaby/"
+                "url": "https://www.cnblogs.com/xybaby/",
+                "icon": ""
             },{
                 "name": "网易云课堂",
-                "url": "https://study.163.com/"
+                "url": "https://study.163.com/",
+                "icon": ""
             },{
                 "name": "腾讯课堂",
-                "url": "https://ke.qq.com/"
+                "url": "https://ke.qq.com/",
+                "icon": ""
             }
         ]
     },

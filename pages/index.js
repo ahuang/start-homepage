@@ -9,7 +9,7 @@ export default function() {
           return(
             <a href={m.url} target="_blank" key={i} 
               className={styles.url} title={m.name}>
-              <img src={`/icons/${m.icon}`} width="16"/>
+              <img src={`./icons/${m.icon}`} width="16"/>
             </a>)
         }else{
           return (
@@ -19,7 +19,7 @@ export default function() {
         }
       });
       return (<div className={styles.blocks}>
-        <p className={styles.title} key={d.key} style={{fontSize: '14px'}}>
+        <p className={styles.title} key={d.key} style={{fontSize: '14px', color: 'darkkhaki'}}>
           {d.title}
         </p>
         <p>{list}</p>
