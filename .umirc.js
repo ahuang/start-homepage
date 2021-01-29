@@ -7,4 +7,5 @@ export default {
   plugins: [
     'umi-plugin-gh-pages',
   ],
+  hash: true
 }

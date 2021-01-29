@@ -9,7 +9,7 @@ export default function() {
           return(
             <a href={m.url} target="_blank" key={i} 
               className={styles.url} title={m.name}>
-              <img src={`./icons/${m.icon}`} width="16"/>
+              <img src={`./icons/${m.icon}`}  key={i} width="20"/>
             </a>)
         }else{
           return (
@@ -18,11 +18,11 @@ export default function() {
           </a>)
         }
       });
-      return (<div className={styles.blocks}>
-        <p className={styles.title} key={d.key} style={{fontSize: '14px', color: 'darkkhaki'}}>
+      return (<div className={styles.blocks}  key={d.key}>
+        <span className={styles.title}>
           {d.title}
-        </p>
-        <p>{list}</p>
+        </span>
+        <>{list}</>
       </div>)
 
     });
