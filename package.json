@@ -5,7 +5,7 @@
     "build": "umi build",
     "publish": "gh-pages -d dist",
     "deploy": "npm run build && gh-pages -d dist"
-  },  
+  },
   "devDependencies": {
     "umi": "2.x",
     "umi-plugin-gh-pages": "0.x"

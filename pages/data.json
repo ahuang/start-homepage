@@ -28,6 +28,10 @@
                 "name": "19楼",
                 "url": "https://www.19lou.com/",
                 "icon": "19lou.png"
+            },{
+                "name": "cntimes",
+                "url": "https://cn.nytimes.com/",
+                "icon": "cntimes.png"
             }
         ]
     },
@@ -91,6 +95,14 @@
                 "url": "https://wx2.qq.com/",
                 "icon": "weixin.png"
             },{
+                "name": "有道云笔记",
+                "url": "https://note.youdao.com/web/#/file/recent",
+                "icon": "note163.png"
+            },{
+                "name": "github",
+                "url": "https://www.github.com/",
+                "icon": "github.png"
+            },{
                 "name": "微软翻译",
                 "url": "https://cn.bing.com/translator",
                 "icon": "bing.png"
@@ -98,14 +110,18 @@
                 "name": "有道翻译",
                 "url": "http://fanyi.youdao.com/?keyfrom=dict2.index",
                 "icon": "youdao.png"
-            },{
-                "name": "github",
-                "url": "https://www.github.com/",
-                "icon": "github.png"
+            },{                
+                "name": "谷歌翻译",
+                "url": "https://translate.google.cn/",
+                "icon": "ggTranslate.png"
             },{
                 "name": "阿里矢量图库",
                 "url": "https://www.iconfont.cn/?spm=a313x.7781069.1998910419.d4d0a486a",
                 "icon": "alitool.png"
+            },{
+                "name": "LibCyber",
+                "url": "https://baiducdn-global-696ce6ed-768f-4bb5-8593-743124f09df5.libcyber2020.xyz/nodeList",
+                "icon": "libcyber.png"
             }
         ]
     }, {
@@ -156,6 +172,10 @@
                 "name": "必应壁纸",
                 "url": "https://bing.ioliu.cn/ranking",
                 "icon": "bingbizhi.png"
+            },{
+                "name": "92dpw",
+                "url": "https://www.92dpw.com/",
+                "icon": "92dpw.png"
             }
         ]
     }, {
