@@ -40,6 +40,11 @@
         "title": "搜索",
         "list":[
             {
+                "name": "Google",
+                "url": "https://www.google.com/",
+                "icon": "google.png"
+            },
+            {
                 "name": "必应",
                 "url": "http://cn.bing.com/",
                 "icon": "bing.png"
