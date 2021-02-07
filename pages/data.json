@@ -127,6 +127,10 @@
                 "name": "LibCyber",
                 "url": "https://baiducdn-global-696ce6ed-768f-4bb5-8593-743124f09df5.libcyber2020.xyz/nodeList",
                 "icon": "libcyber.png"
+            },{
+                "name": "local-whistlejs",
+                "url": "http://local.whistlejs.com/",
+                "icon": "local-whistlejs.png"
             }
         ]
     }, {
