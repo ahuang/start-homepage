@@ -53,6 +53,10 @@
                 "url": "https://www.baidu.com/",
                 "icon": "baidu.png"
             },{
+                "name": "wikipedia",
+                "url": "https://zh.wikipedia.org/",
+                "icon": "wikipedia.png"
+            },{
                 "name": "stackoverflow",
                 "url": "https://stackoverflow.com",
                 "icon": "stackoverflow.png"
@@ -185,6 +189,10 @@
                 "name": "92dpw",
                 "url": "https://www.92dpw.com/",
                 "icon": "92dpw.png"
+            },{
+                "name": "小红书",
+                "url": "https://www.xiaohongshu.com/explore",
+                "icon": "xiaohongshu.png"
             }
         ]
     }, {
