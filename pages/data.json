@@ -32,6 +32,10 @@
                 "name": "cntimes",
                 "url": "https://cn.nytimes.com/",
                 "icon": "cntimes.png"
+            },{
+                "name": "IT之家",
+                "url": "https://www.ithome.com",
+                "icon": "IThome.png"
             }
         ]
     },
@@ -193,6 +197,14 @@
                 "name": "小红书",
                 "url": "https://www.xiaohongshu.com/explore",
                 "icon": "xiaohongshu.png"
+            },{
+                "name": "网易云音乐",
+                "url": "https://music.163.com/",
+                "icon": "music163.png"
+            },{
+                "name": "豆瓣",
+                "url": "https://www.douban.com/",
+                "icon": "douban.png"
             }
         ]
     }, {
