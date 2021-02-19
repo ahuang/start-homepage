@@ -215,6 +215,10 @@
                 "name": "vue文档",
                 "url": "https://cn.vuejs.org/",
                 "icon": "vue.png"
+            },{
+                "name": "ant-design-vue",
+                "url": "https://antdv.com/docs/vue/introduce-cn/",
+                "icon": "antdvue.png"
             }
         ]
     },{
