@@ -276,6 +276,10 @@
                 "name": "微信支付",
                 "url": "https://pay.weixin.qq.com/wiki/doc/api/index.html",
                 "icon": ""
+            },{
+                "name": "微信云开发",
+                "url": "https://developers.weixin.qq.com/miniprogram/dev/wxcloud/basis/getting-started.html",
+                "icon": ""
             }
         ]
     },{
