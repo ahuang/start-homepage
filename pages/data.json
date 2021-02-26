@@ -169,6 +169,11 @@
         "title": "休闲",
         "list":[
             {
+                "name": "轻松一刻",
+                "url": "https://c.m.163.com/news/sub/T1348654628034.html",
+                "icon": "relax.png"
+            },
+            {
                 "name": "知乎日报",
                 "url": "https://daily.zhihu.com/",
                 "icon": "zhihudaily1.png"
