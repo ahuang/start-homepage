@@ -161,6 +161,10 @@
                 "name": "腾讯课堂",
                 "url": "https://ke.qq.com/",
                 "icon": "studyqq.png"
+            },{
+                "name": "软考",
+                "url": "https://www.ruankao.org.cn/",
+                "icon": "ruankao.png"
             }
         ]
     },
