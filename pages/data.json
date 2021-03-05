@@ -70,6 +70,10 @@
                 "url": "https://www.baidu.com/",
                 "icon": "baidu.png"
             },{
+                "name": "极客搜索",
+                "url": "https://s.geekbang.org/",
+                "icon": "geekbang.png"
+            },{
                 "name": "wikipedia",
                 "url": "https://zh.wikipedia.org/",
                 "icon": "wikipedia.png"
