@@ -4,6 +4,19 @@
         "title": "资讯",
         "list":[
             {
+                "name": "后续",
+                "url": "https://houxu.app/",
+                "icon": "houxu.png"
+            },{
+                "name": "v2ex",
+                "url": "https://www.v2ex.com/",
+                "icon": "v2ex.png"
+            },{
+                "name": "cnbeta",
+                "url": "https://www.cnbeta.com/",
+                "icon": "cnbeta.png"
+            },
+            {
                 "name": "微博热搜榜",
                 "url": "https://s.weibo.com/top/summary",
                 "icon": "weibo.png"
@@ -139,6 +152,18 @@
                 "name": "local-whistlejs",
                 "url": "http://local.whistlejs.com/",
                 "icon": "local-whistlejs.png"
+            },{
+                "name": "懒人音乐下载",
+                "url": "https://www.eggvod.cn/music/",
+                "icon": "eggvod.png"
+            },{
+                "name": "电子书",
+                "url": "https://www.jiumodiary.com/",
+                "icon": "jiumodiary.png"
+            },{
+                "name": "ps",
+                "url": "https://www.photopea.com/",
+                "icon": ""
             }
         ]
     }, {
@@ -158,6 +183,10 @@
                 "url": "https://study.163.com/",
                 "icon": "study163.png"
             },{
+                "name": "中国大学MOOC",
+                "url": "https://www.icourse163.org/",
+                "icon": "mooc.png"
+            },{
                 "name": "腾讯课堂",
                 "url": "https://ke.qq.com/",
                 "icon": "studyqq.png"
@@ -165,6 +194,10 @@
                 "name": "软考",
                 "url": "https://www.ruankao.org.cn/",
                 "icon": "ruankao.png"
+            },{
+                "name": "菜鸟教程",
+                "url": "https://www.runoob.com/",
+                "icon": "runoob.png"
             }
         ]
     },
@@ -214,6 +247,10 @@
                 "name": "豆瓣",
                 "url": "https://www.douban.com/",
                 "icon": "douban.png"
+            },{
+                "name": "煎蛋",
+                "url": "https://jandan.net/",
+                "icon": "jiandan.png"
             }
         ]
     }, {
