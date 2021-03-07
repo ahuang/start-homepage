@@ -1,0 +1,15 @@
+{
+    "key": "life",
+    "title": "生活",
+    "list":[
+        {
+            "name": "中国天气网",
+            "url": "http://www.weather.com.cn/weather1d/101210101.shtml",
+            "icon": "weather.png"
+        },{
+            "name": "日历",
+            "url": "https://qq.ip138.com/day/",
+            "icon": "calendar.png"
+        }
+    ]
+}

@@ -1,0 +1,55 @@
+{
+    "key":"tools",
+    "title": "工具",
+    "list":[
+        {
+            "name": "微信客户端",
+            "url": "https://wx2.qq.com/",
+            "icon": "weixin.png"
+        },{
+            "name": "有道云笔记",
+            "url": "https://note.youdao.com/web/#/file/recent",
+            "icon": "note163.png"
+        },{
+            "name": "github",
+            "url": "https://www.github.com/",
+            "icon": "github.png"
+        },{
+            "name": "微软翻译",
+            "url": "https://cn.bing.com/translator",
+            "icon": "bing.png"
+        },{
+            "name": "有道翻译",
+            "url": "http://fanyi.youdao.com/?keyfrom=dict2.index",
+            "icon": "youdao.png"
+        },{                
+            "name": "谷歌翻译",
+            "url": "https://translate.google.cn/",
+            "icon": "ggTranslate.png"
+        },{
+            "name": "阿里矢量图库",
+            "url": "https://www.iconfont.cn/?spm=a313x.7781069.1998910419.d4d0a486a",
+            "icon": "alitool.png"
+        },{
+            "name": "LibCyber",
+            "url": "https://baiducdn-global-696ce6ed-768f-4bb5-8593-743124f09df5.libcyber2020.xyz/nodeList",
+            "icon": "libcyber.png"
+        },{
+            "name": "local-whistlejs",
+            "url": "http://local.whistlejs.com/",
+            "icon": "local-whistlejs.png"
+        },{
+            "name": "懒人音乐下载",
+            "url": "https://www.eggvod.cn/music/",
+            "icon": "eggvod.png"
+        },{
+            "name": "电子书",
+            "url": "https://www.jiumodiary.com/",
+            "icon": "jiumodiary.png"
+        },{
+            "name": "ps",
+            "url": "https://www.photopea.com/",
+            "icon": "ps.png"
+        }
+    ]
+}

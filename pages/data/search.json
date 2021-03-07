@@ -1,0 +1,64 @@
+{
+    "key":"search",
+    "title": "搜索",
+    "list":[
+        {
+            "name": "Google",
+            "url": "https://www.google.com/",
+            "icon": "google.png"
+        },
+        {
+            "name": "必应",
+            "url": "http://cn.bing.com/",
+            "icon": "bing.png"
+        },{
+            "name": "百度",
+            "url": "https://www.baidu.com/",
+            "icon": "baidu.png"
+        },{
+            "name": "极客搜索",
+            "url": "https://s.geekbang.org/",
+            "icon": "geekbang.png"
+        },{
+            "name": "wikipedia",
+            "url": "https://zh.wikipedia.org/",
+            "icon": "wikipedia.png"
+        },{
+            "name": "stackoverflow",
+            "url": "https://stackoverflow.com",
+            "icon": "stackoverflow.png"
+        },{
+            "name": "InfoQ",
+            "url": "https://www.infoq.cn/",
+            "icon": "infoq.png"
+        },{
+            "name": "腾讯IMWeb",
+            "url": "https://imweb.io/topic/tab/all",
+            "icon": "imweb.png"
+        },{
+            "name": "腾讯云",
+            "url": "https://cloud.tencent.com/developer",
+            "icon": "txcloud.png"
+        },{
+            "name": "掘金",
+            "url": "https://juejin.im/",
+            "icon": "juejin.png"
+        },{
+            "name": "思否",
+            "url": "https://segmentfault.com/",
+            "icon": "segment.png"
+        },{
+            "name": "知乎",
+            "url": "http://www.zhihu.com/",
+            "icon": "zhihu.png"
+        },{
+            "name": "简书",
+            "url": "http://www.jianshu.com/",
+            "icon": "jianshu.png"
+        },{
+            "name": "大漠",
+            "url": "https://www.w3cplus.com/",
+            "icon": "damo.png"
+        }
+    ]
+}

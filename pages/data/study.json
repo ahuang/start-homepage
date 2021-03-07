@@ -1,0 +1,35 @@
+{
+    "key":"study",
+    "title": "学习",
+    "list":[
+        {
+            "name": "小脚鸭",
+            "url": "https://www.cnblogs.com/minnie-huang/",
+            "icon": "xjy.png"
+        },{
+            "name": "xybaby",
+            "url": "https://www.cnblogs.com/xybaby/",   
+            "icon": "xybaby.png"
+        },{
+            "name": "网易云课堂",
+            "url": "https://study.163.com/",
+            "icon": "study163.png"
+        },{
+            "name": "中国大学MOOC",
+            "url": "https://www.icourse163.org/",
+            "icon": "mooc.png"
+        },{
+            "name": "腾讯课堂",
+            "url": "https://ke.qq.com/",
+            "icon": "studyqq.png"
+        },{
+            "name": "软考",
+            "url": "https://www.ruankao.org.cn/",
+            "icon": "ruankao.png"
+        },{
+            "name": "菜鸟教程",
+            "url": "https://www.runoob.com/",
+            "icon": "runoob.png"
+        }
+    ]
+}

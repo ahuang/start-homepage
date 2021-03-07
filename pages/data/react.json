@@ -1,0 +1,32 @@
+{
+    "key":"react",
+    "title": "react",
+    "list":[
+        {
+            "name": "官方文档",
+            "url": "https://react.docschina.org/docs/getting-started.html",
+            "icon": "react.png"
+        },{
+            "name": "antd",
+            "url": "https://ant.design/components/overview-cn/",
+            "icon": "antd.png"
+        },{
+            "name": "antd-mobile",
+            "url": "https://mobile.ant.design/docs/react/introduce-cn",
+            "icon": "antd-mobile.png"
+        },{
+            "name": "umi文档",
+            "url": "https://umijs.org/zh-CN",
+            "icon": "umi.png"
+        },{
+            "name": "umi语雀",
+            "url": "https://www.yuque.com/umijs/umi/hello",
+            "icon": "yuque.png"
+        },{
+            "name": "dva文档",
+            "url": "https://dvajs.com/guide/",
+            "icon": "dva.png"
+        }
+       
+    ]
+}
