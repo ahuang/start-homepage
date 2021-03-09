@@ -12,15 +12,6 @@
             "url": "https://daily.zhihu.com/",
             "icon": "zhihudaily1.png"
         },{
-            "name": "阮一峰",
-            "url": "http://www.ruanyifeng.com/blog/archives.html",
-            "icon": "ryf.png"
-            
-        },{
-            "name": "博客园官方微博",
-            "url": "https://www.cnblogs.com/cmt",
-            "icon": "cnblogcmt.png"
-        },{
             "name": "酷壳",
             "url": "https://coolshell.cn/",
             "icon": "coolshell.png"
@@ -41,6 +32,10 @@
             "url": "https://music.163.com/",
             "icon": "music163.png"
         },{
+            "name": "懒人音乐下载",
+            "url": "https://www.eggvod.cn/music/",
+            "icon": "eggvod.png"
+        },{
             "name": "豆瓣",
             "url": "https://www.douban.com/",
             "icon": "douban.png"
@@ -51,7 +46,7 @@
         },{
             "name": "唯品会",
             "url": "https://www.vip.com/",
-            "icon": "vip.pn"
+            "icon": "vip.png"
         }
     ]
 }

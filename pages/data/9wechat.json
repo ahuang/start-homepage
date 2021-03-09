@@ -5,31 +5,31 @@
             {
                 "name": "小程序文档",
                 "url": "https://developers.weixin.qq.com/miniprogram/dev/framework/",
-                "icon": ""
+                "icon": "miniappdoc.png"
             },{
                 "name": "小程序后台",
                 "url": "https://mp.weixin.qq.com/wxamp/home/guide",
-                "icon": ""
+                "icon": "miniappadmin.png"
             },{
-                "name": "公众号文档",
-                "url": "https://developers.weixin.qq.com/doc/offiaccount/OA_Web_Apps/JS-SDK.html",
-                "icon": ""
-            },{
-                "name": "公众号测试账号",
-                "url": "https://mp.weixin.qq.com/debug/cgi-bin/sandboxinfo?action=showinfo&t=sandbox/index",
-                "icon": ""
-            },{
-                "name": "微信支付",
-                "url": "https://pay.weixin.qq.com/wiki/doc/api/index.html",
-                "icon": ""
-            },{
-                "name": "微信云开发",
+                "name": "小程序云开发",
                 "url": "https://developers.weixin.qq.com/miniprogram/dev/wxcloud/basis/getting-started.html",
-                "icon": ""
+                "icon": "miniappcloud.png"
             },{
                 "name": "vant-weapp",
                 "url": "https://youzan.github.io/vant-weapp/#/intro",
                 "icon": "vant-weapp.png"
+            },{
+                "name": "公众号文档",
+                "url": "https://developers.weixin.qq.com/doc/offiaccount/OA_Web_Apps/JS-SDK.html",
+                "icon": "woadoc.png"
+            },{
+                "name": "公众号测试账号",
+                "url": "https://mp.weixin.qq.com/debug/cgi-bin/sandboxinfo?action=showinfo&t=sandbox/index",
+                "icon": "woatest.png"
+            },{
+                "name": "微信支付",
+                "url": "https://pay.weixin.qq.com/wiki/doc/api/index.html",
+                "icon": "wechatpay.png"
             }
         ]
     }

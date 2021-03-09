@@ -1,14 +1,14 @@
 import styles from './index.css';
-import news from './data/news.json';
-import search from './data/search.json';
-import tools from './data/tools.json';
-import study from './data/study.json';
-import life from './data/life.json';
-import fun from './data/fun.json';
-import vue from './data/fun.json';
-import react from './data/react.json';
-import wechat from './data/wechat.json';
-import alipay from './data/alipay.json';
+import news from './data/1news.json';
+import search from './data/2search.json';
+import tools from './data/3tools.json';
+import study from './data/4study.json';
+import life from './data/5life.json';
+import fun from './data/6fun.json';
+import vue from './data/7vue.json';
+import react from './data/8react.json';
+import wechat from './data/9wechat.json';
+import alipay from './data/10alipay.json';
 
 export default function() {
   const renderContent = () =>{

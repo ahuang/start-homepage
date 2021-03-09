@@ -3,13 +3,13 @@
         "title": "支付宝",
         "list":[
             {
+                "name": "支付宝小程序文档",
+                "url": "https://opendocs.alipay.com/mini/developer",
+                "icon": "alipaydoc.png"
+            },{
                 "name": "支付宝后台",
                 "url": "https://openhome.alipay.com/platform/developerIndex.htm",
-                "icon": ""
-            },{
-                "name": "支付宝开发",
-                "url": "https://opendocs.alipay.com/mini/developer",
-                "icon": ""
+                "icon": "alipayadmin.png"
             }
         ]
     }

@@ -10,6 +10,10 @@
             "name": "日历",
             "url": "https://qq.ip138.com/day/",
             "icon": "calendar.png"
+        },{
+            "name": "有道云笔记",
+            "url": "https://note.youdao.com/web/#/file/recent",
+            "icon": "note163.png"
         }
     ]
 }
