@@ -3,6 +3,7 @@ import news from './data/1news.json';
 import search from './data/2search.json';
 import tools from './data/3tools.json';
 import study from './data/4study.json';
+import story from './data/4.1.story.json';
 import life from './data/5life.json';
 import fun from './data/6fun.json';
 import vue from './data/7vue.json';
@@ -12,7 +13,7 @@ import alipay from './data/10alipay.json';
 
 export default function() {
   const renderContent = () =>{
-    const data = [news,search, tools, study,life,fun,vue,react,wechat, alipay];
+    const data = [news,search, tools, study,story,life,fun,vue,react,wechat, alipay];
     const blocks = data.map(d =>{
       const list = d.list.map((m,i) =>{
         if(m.icon){
