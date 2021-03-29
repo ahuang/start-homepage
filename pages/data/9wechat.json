@@ -30,6 +30,10 @@
                 "name": "微信支付",
                 "url": "https://pay.weixin.qq.com/wiki/doc/api/index.html",
                 "icon": "wechatpay.png"
+            },{
+                "name": "公众号历史文章",
+                "url": "https://mp.weixin.qq.com/mp/profile_ext?action=home&__biz=MzI1NjAyNDg5NQ==#wechat_redirect",
+                "icon": "wechatlist.png"
             }
         ]
     }

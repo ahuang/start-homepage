@@ -38,9 +38,21 @@ export default function() {
     });
     return blocks;
   }
+
+  const renderWechat = () =>{
+    return (
+      <div>
+          <img src='./wechat/public.jpg'  width="40%" style={{margin: '5%'}}/>
+          <img src='./wechat/miniapp.jpg'  width="40%" style={{margin: '5%'}}/>
+        </div>
+    )
+  }
   return (
-    <div className={styles.wrap}>
-      {renderContent()}
+    <div>
+      <div className={styles.wrap}>
+        {renderContent()}
+        {renderWechat()}
+      </div>
     </div>
   );
 }
