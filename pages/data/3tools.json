@@ -54,6 +54,14 @@
             "name": "caniuse",
             "url": "https://caniuse.com/",
             "icon": "caniuse.png"
+        },{
+            "name": "天眼查",
+            "url": "https://www.tianyancha.com/",
+            "icon": "tianyancha.png"
+        },{
+            "name": "qcc",
+            "url": "https://www.qcc.com/",
+            "icon": "qcc.png"
         }
     ]
 }
