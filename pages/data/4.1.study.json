@@ -33,15 +33,18 @@
         },{
             "name": "前端面试之道",
             "url": "http://caibaojian.com/interview-map/",
-            "icon": "interview-map.png"
+            "icon": "interview-map.png",
+            "highlight": true
         },{
             "name": "面试每日一题",
             "url": "https://q.shanyue.tech/",
-            "icon": "interview-daily.png"
+            "icon": "interview-daily.png",
+            "highlight": true
         },{
             "name": "前端进阶积累",
             "url": "http://obkoro1.com/web_accumulate/",
-            "icon": "interview-accumulate.png"
+            "icon": "interview-accumulate.png",
+            "highlight": true
         }
     ]
 }

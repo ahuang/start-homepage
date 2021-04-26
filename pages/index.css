@@ -1,8 +1,18 @@
-
 body{
   background:  #52616b;
   margin:0;
   padding:0;
+}
+
+.remember{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  /* flex-direction: column; */
+}
+
+.fmgr16{
+  margin-right: 16px;
 }
 .wrap {
   margin:5vh 16vw 10vh 16vw;
@@ -29,4 +39,8 @@ body{
   color: #f7fbfc;
   text-decoration: none;
   padding: 6px 4px;
+}
+
+.wrap .highlight{
+  background-color: gold;
 }
