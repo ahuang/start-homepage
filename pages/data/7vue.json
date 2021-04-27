@@ -29,7 +29,7 @@
         },{
             "name": "nuxtjs",
             "url": "https://zh.nuxtjs.org/",
-            "icon": ""
+            "icon": "nuxt.js.png"
         }
     ]
 }
