@@ -26,6 +26,10 @@
             "name": "elementUI",
             "url": "https://element.eleme.cn/#/zh-CN/component/installation",
             "icon": "elementui.png"
+        },{
+            "name": "nuxtjs",
+            "url": "https://zh.nuxtjs.org/",
+            "icon": ""
         }
     ]
 }
