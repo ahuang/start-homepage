@@ -3,6 +3,12 @@
     "title": "资讯",
     "list":[
         {
+            "name": "科普中国",
+            "url": "http://www.kepuchina.cn/",
+            "icon": "popscience.png"
+            
+        },
+        {
             "name": "阮一峰",
             "url": "http://www.ruanyifeng.com/blog/archives.html",
             "icon": "ryf.png"
