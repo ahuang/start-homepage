@@ -9,11 +9,11 @@
         "name": "孩子教育网",
         "url": "http://www.edubabe.cn/",
         "icon": "edubabe.png",
-        "highlight": true
+        "highlight": false
     },{
         "name": "太平洋亲子网",
         "url": "https://yuer.pcbaby.com.cn/",
         "icon": "pcbaby.png",
-        "highlight": true
+        "highlight": false
     }]
 }

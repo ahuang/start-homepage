@@ -1,0 +1,5 @@
+{
+            "name": "科普中国",
+            "url": "http://www.kepuchina.cn/",
+            "icon": "popscience.png"
+        },

@@ -3,16 +3,22 @@
     "title": "资讯",
     "list":[
         {
-            "name": "科普中国",
-            "url": "http://www.kepuchina.cn/",
-            "icon": "popscience.png"
-            
-        },
-        {
             "name": "阮一峰",
             "url": "http://www.ruanyifeng.com/blog/archives.html",
             "icon": "ryf.png"
             
+        },{
+            "name": "v2ex",
+            "url": "https://www.v2ex.com/",
+            "icon": "v2ex.png"
+        },{
+            "name": "杭州市人力资源和社会保障局",
+            "url": "http://hrss.hangzhou.gov.cn/col/col1229125915/index.html",
+            "icon": "hrss.png"
+        },{
+            "name": "浙江省人力资源和社会保障厅",
+            "url": "http://rlsbt.zj.gov.cn/col/col1443681/index.html",
+            "icon": "zjgov.png"
         },{
             "name": "博客园官方微博",
             "url": "https://www.cnblogs.com/cmt",
@@ -26,10 +32,6 @@
             "name": "后续",
             "url": "https://houxu.app/",
             "icon": "houxu.png"
-        },{
-            "name": "v2ex",
-            "url": "https://www.v2ex.com/",
-            "icon": "v2ex.png"
         },{
             "name": "cnbeta",
             "url": "https://www.cnbeta.com/",
