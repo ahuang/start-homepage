@@ -20,14 +20,6 @@
             "url": "https://www.baidu.com/",
             "icon": "baidu.png"
         },{
-            "name": "极客搜索",
-            "url": "https://s.geekbang.org/",
-            "icon": "geekbang.png"
-        },{
-            "name": "wikipedia",
-            "url": "https://zh.wikipedia.org/",
-            "icon": "wikipedia.png"
-        },{
             "name": "stackoverflow",
             "url": "https://stackoverflow.com",
             "icon": "stackoverflow.png"
@@ -63,6 +55,10 @@
             "name": "大漠",
             "url": "https://www.w3cplus.com/",
             "icon": "damo.png"
+        },{
+            "name": "电子书",
+            "url": "https://www.jiumodiary.com/",
+            "icon": "jiumodiary.png"
         }
     ]
 }

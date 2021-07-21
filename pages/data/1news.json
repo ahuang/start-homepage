@@ -32,16 +32,8 @@
             "name": "后续",
             "url": "https://houxu.app/",
             "icon": "houxu.png"
-        },{
-            "name": "cnbeta",
-            "url": "https://www.cnbeta.com/",
-            "icon": "cnbeta.png"
         },
         {
-            "name": "微博热搜榜",
-            "url": "https://s.weibo.com/top/summary",
-            "icon": "weibo.png"
-        },{
             "name": "博客园",
             "url": "https://www.cnblogs.com/cmt",
             "icon": "cnblog1.png"
@@ -66,10 +58,6 @@
             "name": "cntimes",
             "url": "https://cn.nytimes.com/",
             "icon": "cntimes.png"
-        },{
-            "name": "IT之家",
-            "url": "https://www.ithome.com",
-            "icon": "IThome.png"
         }
     ]
 }

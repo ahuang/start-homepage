@@ -1,5 +1,130 @@
 {
-            "name": "科普中国",
-            "url": "http://www.kepuchina.cn/",
-            "icon": "popscience.png"
+    "name": "科普中国",
+    "url": "http://www.kepuchina.cn/",
+    "icon": "popscience.png"
+},
+
+{
+    "name": "cnbeta",
+    "url": "https://www.cnbeta.com/",
+    "icon": "cnbeta.png"
+},
+
+,{
+    "name": "IT之家",
+    "url": "https://www.ithome.com",
+    "icon": "IThome.png"
+}
+
+
+{
+    "name": "极客搜索",
+    "url": "https://s.geekbang.org/",
+    "icon": "geekbang.png"
+},{
+    "name": "wikipedia",
+    "url": "https://zh.wikipedia.org/",
+    "icon": "wikipedia.png"
+},
+
+
+
+
+
+
+
+        {
+            "name": "微软翻译",
+            "url": "https://cn.bing.com/translator",
+            "icon": "bing.png"
+        },{                
+            "name": "谷歌翻译",
+            "url": "https://translate.google.cn/",
+            "icon": "ggTranslate.png"
         },
+
+
+        {
+            "name": "local-whistlejs",
+            "url": "http://local.whistlejs.com/",
+            "icon": "local-whistlejs.png"
+        },
+
+
+        {
+            "name": "ps",
+            "url": "https://www.photopea.com/",
+            "icon": "ps.png"
+        },{
+            "name": "caniuse",
+            "url": "https://caniuse.com/",
+            "icon": "caniuse.png"
+        },{
+            "name": "天眼查",
+            "url": "https://www.tianyancha.com/",
+            "icon": "tianyancha.png"
+        },{
+            "name": "qcc",
+            "url": "https://www.qcc.com/",
+            "icon": "qcc.png"
+        }
+
+
+
+        {
+    "key":"eduction",
+    "title": "教育",
+    "list":[{
+        "name": "宝宝教育笔记",
+        "url": "https://note.youdao.com/web/#/file/WEBd2f5742d60ea6d46e1f84b4aa593620b/note/WEB089861cdf7a1bb4a38c30eeb6d41e04c/",
+        "icon": "note163.png"
+    },{
+        "name": "孩子教育网",
+        "url": "http://www.edubabe.cn/",
+        "icon": "edubabe.png",
+        "highlight": false
+    },{
+        "name": "太平洋亲子网",
+        "url": "https://yuer.pcbaby.com.cn/",
+        "icon": "pcbaby.png",
+        "highlight": false
+    }]
+}
+
+
+{
+    "key":"story",
+    "title": "休闲",
+    "list":[{
+            "name": "成语-新东方",
+            "url": "https://xiaoxue.koolearn.com/quweixuexi/gushidaquan/chengyugushi/"
+        },{
+            "name": "成语-汉辞网",
+            "url": "http://www.hydcd.com/cy/chengyugushi.htm"
+        },{
+            "name": "神话-经典",
+            "url": "http://www.duanmeiwen.com/gushi/jingxuan/32102.html",
+            "icon": ""
+        },{
+            "name": "神话-中国",
+            "url": "http://www.qigushi.com/zgsh/",
+            "icon": ""
+        },{
+            "name": "神话-大全",
+            "url": "http://www.shenhuagushi.net/",
+            "icon": ""
+        },{
+            "name": "名人-baby",
+            "url": "https://edu.pcbaby.com.cn/book/zt/mrgsdq/",
+            "icon": ""
+        },{
+            "name": "格林童话",
+            "url": "http://www.bestgushi.com/shaoer/gelintonghua/",
+            "icon": ""
+        },{
+            "name": "36计故事",
+            "url": "https://zhuanlan.zhihu.com/p/144714402",
+            "icon": ""
+        }
+    ]
+}
