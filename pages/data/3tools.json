@@ -7,6 +7,10 @@
             "url": "http://fanyi.youdao.com/?keyfrom=dict2.index",
             "icon": "youdao.png"
         },{
+            "name": "google翻译",
+            "url": " https://translate.google.cn/",
+            "icon": "google-tranaslate.png"
+        },{
             "name": "微信网页版",
             "url": "https://wx2.qq.com/",
             "icon": "weixin.png"
