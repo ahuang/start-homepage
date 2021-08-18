@@ -31,6 +31,14 @@
             "url": "https://www.iconfont.cn/?spm=a313x.7781069.1998910419.d4d0a486a",
             "icon": "alitool.png"
         },{
+            "name": "tinypng",
+            "url": "https://tinypng.com/",
+            "icon": "tinypng.png"
+        },{
+            "name": "squoosh",
+            "url": "https://squoosh.app/",
+            "icon": "squoosh.png"
+        },{
             "name": "LibCyber",
             "url": "https://baiducdn-global-696ce6ed-768f-4bb5-8593-743124f09df5.libcyber2020.xyz/nodeList",
             "icon": "libcyber.png"
