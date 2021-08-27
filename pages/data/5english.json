@@ -24,8 +24,12 @@
             "icon": "vue.png"
         },{
             "name": "medium",
-            "url": "https://medium.com/",
+            "url": "https://medium.com/front-end-weekly",
             "icon": "medium.png"
+        },{
+            "name": "stackoverflow",
+            "url": "https://stackoverflow.com/jobs",
+            "icon": "stackoverflow.png"
         }
     ]
 }
