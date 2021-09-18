@@ -5,47 +5,47 @@
         {
             "name": "有道翻译",
             "url": "http://fanyi.youdao.com/?keyfrom=dict2.index",
-            "icon": "youdao.png"
+            "icon": "youdao.ico"
         },{
             "name": "google翻译",
             "url": " https://translate.google.cn/",
-            "icon": "google-tranaslate.png"
+            "icon": "google-tranaslate.ico"
         },{
             "name": "微信网页版",
             "url": "https://wx2.qq.com/",
-            "icon": "weixin.png"
+            "icon": "weixin.ico"
         },{
             "name": "github",
             "url": "https://www.github.com/",
-            "icon": "github.png"
+            "icon": "github.ico"
         },{
             "name": "githubDns",
             "url": "http://tool.chinaz.com/dns?type=1&host=www.github.com&ip=",
-            "icon": "githubDns.png"
+            "icon": "githubDns.ico"
         },{
             "name": "gitee",
             "url": "https://gitee.com/",
-            "icon": "gitee.png"
+            "icon": "gitee.ico"
         },{
             "name": "阿里矢量图库",
             "url": "https://www.iconfont.cn/?spm=a313x.7781069.1998910419.d4d0a486a",
-            "icon": "alitool.png"
+            "icon": "alitool.ico"
         },{
             "name": "tinypng",
             "url": "https://tinypng.com/",
-            "icon": "tinypng.png"
+            "icon": "tinypng.ico"
         },{
             "name": "squoosh",
             "url": "https://squoosh.app/",
-            "icon": "squoosh.png"
+            "icon": "squoosh.ico"
         },{
             "name": "gif压缩",
             "url": "https://www.tutieshi.com/",
-            "icon": "tutieshi.png"
+            "icon": "tutieshi.ico"
         },{
             "name": "LibCyber",
             "url": "https://baiducdn-global-696ce6ed-768f-4bb5-8593-743124f09df5.libcyber2020.xyz/nodeList",
-            "icon": "libcyber.png"
+            "icon": "libcyber.ico"
         }
     ]
 }

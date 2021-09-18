@@ -5,27 +5,27 @@
         {
             "name": "官方文档",
             "url": "https://react.docschina.org/docs/getting-started.html",
-            "icon": "react.png"
+            "icon": "react.ico"
         },{
             "name": "antd",
             "url": "https://ant.design/components/overview-cn/",
-            "icon": "antd.png"
+            "icon": "antd.ico"
         },{
             "name": "antd-mobile",
             "url": "https://mobile.ant.design/docs/react/introduce-cn",
-            "icon": "antd-mobile.png"
+            "icon": "antd-mobile.ico"
         },{
             "name": "umi文档",
             "url": "https://umijs.org/zh-CN",
-            "icon": "umi.png"
+            "icon": "umi.ico"
         },{
             "name": "umi语雀",
             "url": "https://www.yuque.com/umijs/umi/hello",
-            "icon": "yuque.png"
+            "icon": "yuque.ico"
         },{
             "name": "dva文档",
             "url": "https://dvajs.com/guide/",
-            "icon": "dva.png"
+            "icon": "dva.ico"
         }
        
     ]

@@ -5,60 +5,60 @@
         {
             "name": "Google",
             "url": "https://www.google.com/",
-            "icon": "google.png"
+            "icon": "google.ico"
         },{
             "name": "g363",
             "url": "https://g363.guom.site/",
-            "icon": "g363.png"
+            "icon": "g363.ico"
         },
         {
             "name": "必应",
             "url": "http://cn.bing.com/",
-            "icon": "bing.png"
+            "icon": "bing.ico"
         },{
             "name": "百度",
             "url": "https://www.baidu.com/",
-            "icon": "baidu.png"
+            "icon": "baidu.ico"
         },{
             "name": "stackoverflow",
             "url": "https://stackoverflow.com",
-            "icon": "stackoverflow.png"
+            "icon": "stackoverflow.ico"
         },{
             "name": "InfoQ",
             "url": "https://www.infoq.cn/",
-            "icon": "infoq.png"
+            "icon": "infoq.ico"
         },{
             "name": "腾讯IMWeb",
             "url": "https://imweb.io/topic/tab/all",
-            "icon": "imweb.png"
+            "icon": "imweb.ico"
         },{
             "name": "腾讯云",
             "url": "https://cloud.tencent.com/developer",
-            "icon": "txcloud.png"
+            "icon": "txcloud.ico"
         },{
             "name": "掘金",
             "url": "https://juejin.im/",
-            "icon": "juejin.png"
+            "icon": "juejin.ico"
         },{
             "name": "思否",
             "url": "https://segmentfault.com/",
-            "icon": "segment.png"
+            "icon": "segment.ico"
         },{
             "name": "知乎",
             "url": "http://www.zhihu.com/",
-            "icon": "zhihu.png"
+            "icon": "zhihu.ico"
         },{
             "name": "简书",
             "url": "http://www.jianshu.com/",
-            "icon": "jianshu.png"
+            "icon": "jianshu.ico"
         },{
             "name": "大漠",
             "url": "https://www.w3cplus.com/",
-            "icon": "damo.png"
+            "icon": "damo.ico"
         },{
             "name": "电子书",
             "url": "https://www.jiumodiary.com/",
-            "icon": "jiumodiary.png"
+            "icon": "jiumodiary.ico"
         }
     ]
 }

@@ -5,45 +5,45 @@
         {
             "name": "小脚鸭",
             "url": "https://www.cnblogs.com/minnie-huang/",
-            "icon": "xjy.png"
+            "icon": "xjy.ico"
         },{
             "name": "xybaby",
             "url": "https://www.cnblogs.com/xybaby/",   
-            "icon": "xybaby.png"
+            "icon": "xybaby.ico"
         },{
             "name": "网易云课堂",
             "url": "https://study.163.com/",
-            "icon": "study163.png"
+            "icon": "study163.ico"
         },{
             "name": "中国大学MOOC",
             "url": "https://www.icourse163.org/",
-            "icon": "mooc.png"
+            "icon": "mooc.ico"
         },{
             "name": "腾讯课堂",
             "url": "https://ke.qq.com/",
-            "icon": "studyqq.png"
+            "icon": "studyqq.ico"
         },{
             "name": "软考",
             "url": "https://www.ruankao.org.cn/",
-            "icon": "ruankao.png"
+            "icon": "ruankao.ico"
         },{
             "name": "菜鸟教程",
             "url": "https://www.runoob.com/",
-            "icon": "runoob.png"
+            "icon": "runoob.ico"
         },{
             "name": "前端面试之道",
             "url": "http://caibaojian.com/interview-map/",
-            "icon": "interview-map.png",
+            "icon": "interview-map.ico",
             "highlight": false
         },{
             "name": "面试每日一题",
             "url": "https://q.shanyue.tech/",
-            "icon": "interview-daily.png",
+            "icon": "interview-daily.ico",
             "highlight": false
         },{
             "name": "前端进阶积累",
             "url": "http://obkoro1.com/web_accumulate/",
-            "icon": "interview-accumulate.png",
+            "icon": "interview-accumulate.ico",
             "highlight": false
         }
     ]

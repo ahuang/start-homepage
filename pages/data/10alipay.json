@@ -5,11 +5,11 @@
             {
                 "name": "支付宝小程序文档",
                 "url": "https://opendocs.alipay.com/mini/developer",
-                "icon": "alipaydoc.png"
+                "icon": "alipaydoc.ico"
             },{
                 "name": "支付宝后台",
                 "url": "https://openhome.alipay.com/platform/developerIndex.htm",
-                "icon": "alipayadmin.png"
+                "icon": "alipayadmin.ico"
             }
         ]
     }

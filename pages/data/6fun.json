@@ -5,52 +5,52 @@
         {
             "name": "轻松一刻",
             "url": "https://c.m.163.com/news/sub/T1348654628034.html",
-            "icon": "relax.png"
+            "icon": "relax.ico"
         },{
             "name": "糖果电影",
             "url": "http://www.lxxh1.com/",
-            "icon": "sugarmovie.png"
+            "icon": "sugarmovie.ico"
         },
         {
             "name": "知乎日报",
             "url": "https://daily.zhihu.com/",
-            "icon": "zhihudaily1.png"
+            "icon": "zhihudaily1.ico"
         },{
             "name": "酷壳",
             "url": "https://coolshell.cn/",
-            "icon": "coolshell.png"
+            "icon": "coolshell.ico"
         },{
             "name": "必应壁纸",
             "url": "https://bing.ioliu.cn/ranking",
-            "icon": "bingbizhi.png"
+            "icon": "bingbizhi.ico"
         },{
             "name": "92dpw",
             "url": "https://www.92dpw.com/",
-            "icon": "92dpw.png"
+            "icon": "92dpw.ico"
         },{
             "name": "小红书",
             "url": "https://www.xiaohongshu.com/explore",
-            "icon": "xiaohongshu.png"
+            "icon": "xiaohongshu.ico"
         },{
             "name": "网易云音乐",
             "url": "https://music.163.com/",
-            "icon": "music163.png"
+            "icon": "music163.ico"
         },{
             "name": "懒人音乐下载",
             "url": "https://www.eggvod.cn/music/",
-            "icon": "eggvod.png"
+            "icon": "eggvod.ico"
         },{
             "name": "豆瓣",
             "url": "https://www.douban.com/",
-            "icon": "douban.png"
+            "icon": "douban.ico"
         },{
             "name": "煎蛋",
             "url": "https://jandan.net/",
-            "icon": "jiandan.png"
+            "icon": "jiandan.ico"
         },{
             "name": "唯品会",
             "url": "https://www.vip.com/",
-            "icon": "vip.png"
+            "icon": "vip.ico"
         }
     ]
 }

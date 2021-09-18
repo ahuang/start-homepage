@@ -5,59 +5,58 @@
         {
             "name": "阮一峰",
             "url": "http://www.ruanyifeng.com/blog/archives.html",
-            "icon": "ryf.png"
-            
+            "icon": "ryf.ico"
         },{
             "name": "v2ex",
             "url": "https://www.v2ex.com/",
-            "icon": "v2ex.png"
+            "icon": "v2ex.ico"
         },{
             "name": "杭州市人力资源和社会保障局",
             "url": "http://hrss.hangzhou.gov.cn/col/col1229125915/index.html",
-            "icon": "hrss.png"
+            "icon": "hrss.ico"
         },{
             "name": "浙江省人力资源和社会保障厅",
             "url": "http://rlsbt.zj.gov.cn/col/col1443681/index.html",
-            "icon": "zjgov.png"
+            "icon": "zjgov.ico"
         },{
             "name": "博客园官方微博",
             "url": "https://www.cnblogs.com/cmt",
-            "icon": "cnblogcmt.png"
+            "icon": "cnblogcmt.ico"
         },{
             "name": "今日热榜",
             "url": "https://tophub.today/",
-            "icon": "tophub.png"
+            "icon": "tophub.ico"
         },
         {
             "name": "后续",
             "url": "https://houxu.app/",
-            "icon": "houxu.png"
+            "icon": "houxu.ico"
         },
         {
             "name": "博客园",
             "url": "https://www.cnblogs.com/cmt",
-            "icon": "cnblog1.png"
+            "icon": "cnblog1.ico"
         },            {
             "name": "byr",
             "url": "https://bbs.byr.cn/#!board/WorkLife",
-            "icon": "byr.png"
+            "icon": "byr.ico"
         },{
             "name": "36氪",
             "url": "https://36kr.com/newsflashes",
-            "icon": "36kr.png"
+            "icon": "36kr.ico"
         },{
             "name": "本地宝",
             "url": "http://hz.bendibao.com/",
-            "icon": "bendibao.png"
+            "icon": "bendibao.ico"
             
         },{
             "name": "19楼",
             "url": "https://www.19lou.com/",
-            "icon": "19lou.png"
+            "icon": "19lou.ico"
         },{
             "name": "cntimes",
             "url": "https://cn.nytimes.com/",
-            "icon": "cntimes.png"
+            "icon": "cntimes.ico"
         }
     ]
 }
