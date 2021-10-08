@@ -3,6 +3,10 @@
     "title": "react",
     "list":[
         {
+            "name": "pro.ant.design",
+            "url": "https://pro.ant.design/zh-CN/docs/getting-started",
+            "icon": "antdpro.ico"
+        },{
             "name": "官方文档",
             "url": "https://react.docschina.org/docs/getting-started.html",
             "icon": "react.ico"
