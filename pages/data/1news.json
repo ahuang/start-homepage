@@ -7,18 +7,6 @@
             "url": "http://www.ruanyifeng.com/blog/archives.html",
             "icon": "ryf.ico"
         },{
-            "name": "v2ex",
-            "url": "https://www.v2ex.com/",
-            "icon": "v2ex.ico"
-        },{
-            "name": "杭州市人力资源和社会保障局",
-            "url": "http://hrss.hangzhou.gov.cn/col/col1229125915/index.html",
-            "icon": "hrss.ico"
-        },{
-            "name": "浙江省人力资源和社会保障厅",
-            "url": "http://rlsbt.zj.gov.cn/col/col1443681/index.html",
-            "icon": "zjgov.ico"
-        },{
             "name": "博客园官方微博",
             "url": "https://www.cnblogs.com/cmt",
             "icon": "cnblogcmt.ico"
@@ -36,7 +24,7 @@
             "name": "博客园",
             "url": "https://www.cnblogs.com/cmt",
             "icon": "cnblog1.ico"
-        },            {
+        },{
             "name": "byr",
             "url": "https://bbs.byr.cn/#!board/WorkLife",
             "icon": "byr.ico"

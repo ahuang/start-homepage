@@ -3,6 +3,10 @@
     "title": "学习",
     "list":[
         {
+            "name": "leetcode-cn",
+            "url": "https://leetcode-cn.com/",
+            "icon": "leetcode.ico"
+        },{
             "name": "小脚鸭",
             "url": "https://www.cnblogs.com/minnie-huang/",
             "icon": "xjy.ico"

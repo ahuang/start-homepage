@@ -1,4 +1,5 @@
 import styles from './index.css';
+import jobs from './data/1jobs.json';
 import news from './data/1news.json';
 import search from './data/2search.json';
 import tools from './data/3tools.json';
@@ -12,7 +13,7 @@ import alipay from './data/10alipay.json';
 
 export default function() {
   const renderContent = () =>{
-    const data = [news,search, tools, study,english,fun,vue,react,wechat, alipay];
+    const data = [jobs, news,search, tools, study,english,fun,vue,react,wechat, alipay];
     const blocks = data.map(d =>{
       const list = d.list.map((m,i) =>{
         if(m.icon){
@@ -49,9 +50,9 @@ export default function() {
   return (
     <div>
       <h3 className={styles.remember}>
-        <p className={styles.fmgr16}>keep straight!</p>
-        <p className={styles.fmgr16}>keep thinking!</p>
-        <p className={styles.fmgr16}>no complain!</p>
+        <p className={styles.row}>keep thinking!</p>
+        <p className={styles.row}>no complain!</p>
+        <p className={styles.row}>calm down!</p>
       </h3>
       <div className={styles.wrap}>
         {renderContent()}

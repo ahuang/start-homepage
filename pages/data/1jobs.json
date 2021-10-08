@@ -1,0 +1,55 @@
+{
+    "key":"jobs",
+    "title": "工作",
+    "list":[
+        {
+            "name": "maimai",
+            "url": "https://maimai.cn/gossip_list",
+            "icon": "maimai.ico"
+        },{
+            "name": "v2ex",
+            "url": "https://www.v2ex.com/",
+            "icon": "v2ex.ico"
+        },{
+            "name": "ruby-jobs",
+            "url": "https://ruby-china.org/jobs",
+            "icon": "ruby-china.ico"
+        },{
+            "name": "remoteok",
+            "url": "https://remoteok.io/",
+            "icon": "remoteok.ico"
+        },{
+            "name": "hacker-news",
+            "url": "https://news.ycombinator.com/",
+            "icon": "hacker-news.ico"
+        },{
+            "name": "ruanyf-weekly",
+            "url": "https://github.com/ruanyf/weekly/issues/1913",
+            "icon": "github.ico"
+        },{
+            "name": "linkedin",
+            "url": "https://www.linkedin.com/",
+            "icon": "linkedin.ico"
+        },{
+            "name": "stackoverflow",
+            "url": "https://stackoverflow.com/jobs",
+            "icon": "stackoverflow.ico"
+        },{
+            "name": "flexjobs",
+            "url": "https://www.flexjobs.com/",
+            "icon": "flexjobs.ico"
+        },{
+            "name": "电鸭",
+            "url": "https://eleduck.com/",
+            "icon": "eleduck.ico"
+        },{
+            "name": "杭州市人力资源和社会保障局",
+            "url": "http://hrss.hangzhou.gov.cn/col/col1229125915/index.html",
+            "icon": "hrss.ico"
+        },{
+            "name": "浙江省人力资源和社会保障厅",
+            "url": "http://rlsbt.zj.gov.cn/col/col1443681/index.html",
+            "icon": "zjgov.ico"
+        }
+    ]
+}

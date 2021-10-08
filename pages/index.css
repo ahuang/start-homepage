@@ -5,17 +5,17 @@ body{
 }
 
 .remember{
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  /* flex-direction: column; */
+  text-align: center;
+  margin-bottom: 0;
+  color: lightslategray;
+  font-weight: 400;
 }
 
-.fmgr16{
-  margin-right: 16px;
+.remember .row{
+  margin: 0;
 }
 .wrap {
-  margin:5vh 16vw 10vh 16vw;
+  margin:0 16vw 10vh 16vw;
   color: #fff;
 }
 
