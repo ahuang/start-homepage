@@ -7,6 +7,10 @@
             "url": "http://fanyi.youdao.com/?keyfrom=dict2.index",
             "icon": "youdao.ico"
         },{
+            "name": "baidu翻译",
+            "url": "https://fanyi.baidu.com/",
+            "icon": "baidu-tranaslate.ico"
+        },{
             "name": "google翻译",
             "url": " https://translate.google.cn/",
             "icon": "google-tranaslate.ico"
