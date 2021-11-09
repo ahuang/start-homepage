@@ -3,10 +3,6 @@
     "title": "资讯",
     "list":[
         {
-            "name": "csdn",
-            "url": "https://mp.csdn.net/",
-            "icon": "csdn.ico"
-        },{
             "name": "阮一峰",
             "url": "http://www.ruanyifeng.com/blog/archives.html",
             "icon": "ryf.ico"
@@ -23,11 +19,6 @@
             "name": "后续",
             "url": "https://houxu.app/",
             "icon": "houxu.ico"
-        },
-        {
-            "name": "博客园",
-            "url": "https://www.cnblogs.com/cmt",
-            "icon": "cnblog1.ico"
         },{
             "name": "byr",
             "url": "https://bbs.byr.cn/#!board/WorkLife",

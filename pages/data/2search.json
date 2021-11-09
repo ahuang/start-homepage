@@ -40,6 +40,14 @@
             "url": "https://juejin.im/",
             "icon": "juejin.ico"
         },{
+            "name": "csdn",
+            "url": "https://mp.csdn.net/",
+            "icon": "csdn.ico"
+        },{
+            "name": "博客园",
+            "url": "https://www.cnblogs.com/cmt",
+            "icon": "cnblog1.ico"
+        },{
             "name": "思否",
             "url": "https://segmentfault.com/",
             "icon": "segment.ico"
@@ -55,10 +63,6 @@
             "name": "大漠",
             "url": "https://www.w3cplus.com/",
             "icon": "damo.ico"
-        },{
-            "name": "电子书",
-            "url": "https://www.jiumodiary.com/",
-            "icon": "jiumodiary.ico"
         }
     ]
 }
