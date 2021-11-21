@@ -3,13 +3,13 @@
     "title": "工作",
     "list":[
         {
-            "name": "maimai",
-            "url": "https://maimai.cn/gossip_list",
-            "icon": "maimai.ico"
-        },{
             "name": "v2ex",
             "url": "https://www.v2ex.com/",
             "icon": "v2ex.ico"
+        },{
+            "name": "stackoverflow",
+            "url": "https://stackoverflow.com/jobs",
+            "icon": "stackoverflow.ico"
         },{
             "name": "ruby-jobs",
             "url": "https://ruby-china.org/jobs",
@@ -30,10 +30,6 @@
             "name": "linkedin",
             "url": "https://www.linkedin.com/",
             "icon": "linkedin.ico"
-        },{
-            "name": "stackoverflow",
-            "url": "https://stackoverflow.com/jobs",
-            "icon": "stackoverflow.ico"
         },{
             "name": "flexjobs",
             "url": "https://www.flexjobs.com/",

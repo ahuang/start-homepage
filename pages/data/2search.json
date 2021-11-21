@@ -16,6 +16,10 @@
             "url": "http://cn.bing.com/",
             "icon": "bing.ico"
         },{
+            "name": "duckduckgo",
+            "url": "https://duckduckgo.com/",
+            "icon": "duckduckgo.ico"
+        },{
             "name": "百度",
             "url": "https://www.baidu.com/",
             "icon": "baidu.ico"
