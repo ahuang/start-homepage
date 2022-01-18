@@ -3,6 +3,10 @@
     "title": "工作",
     "list":[
         {
+            "name": "indeed",
+            "url": "https://www.indeed.com/jobs?q=front%20end&l=%20remote&vjk=a96c70fffe4ed1f2",
+            "icon": "indeed.ico"
+        },{
             "name": "v2ex",
             "url": "https://www.v2ex.com/",
             "icon": "v2ex.ico"
