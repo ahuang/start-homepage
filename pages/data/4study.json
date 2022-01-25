@@ -34,21 +34,6 @@
             "name": "菜鸟教程",
             "url": "https://www.runoob.com/",
             "icon": "runoob.ico"
-        },{
-            "name": "前端面试之道",
-            "url": "http://caibaojian.com/interview-map/",
-            "icon": "interview-map.ico",
-            "highlight": false
-        },{
-            "name": "面试每日一题",
-            "url": "https://q.shanyue.tech/",
-            "icon": "interview-daily.ico",
-            "highlight": false
-        },{
-            "name": "前端进阶积累",
-            "url": "http://obkoro1.com/web_accumulate/",
-            "icon": "interview-accumulate.ico",
-            "highlight": false
         }
     ]
 }
