@@ -7,9 +7,9 @@
             "url": "http://www.ruanyifeng.com/blog/archives.html",
             "icon": "ryf.ico"
         },{
-            "name": "maimai",
-            "url": "https://maimai.cn/gossip_list",
-            "icon": "maimai.ico"
+            "name": "知乎日报",
+            "url": "https://daily.zhihu.com/",
+            "icon": "daily_zhihu.ico"
         },{
             "name": "博客园官方微博",
             "url": "https://www.cnblogs.com/cmt",

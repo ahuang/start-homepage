@@ -50,6 +50,10 @@
             "name": "浙江省人力资源和社会保障厅",
             "url": "http://rlsbt.zj.gov.cn/col/col1443681/index.html",
             "icon": "zjgov.ico"
+        },{
+            "name": "maimai",
+            "url": "https://maimai.cn/gossip_list",
+            "icon": "maimai.ico"
         }
     ]
 }
