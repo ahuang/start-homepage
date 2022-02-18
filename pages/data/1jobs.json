@@ -54,6 +54,10 @@
             "name": "maimai",
             "url": "https://maimai.cn/gossip_list",
             "icon": "maimai.ico"
+        },{
+            "name": "amazon",
+            "url": "https://amazon.jobs/zh/",
+            "icon": "amazon.ico"
         }
     ]
 }
