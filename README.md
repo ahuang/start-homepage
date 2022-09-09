@@ -18,3 +18,6 @@ https://ahuang.github.io/start-homepage
 正则校验：https://regex101.com/
 音乐下载 https://www.musicenc.com/
 搜索引擎 https://yandex.com/
+canva: https://www.canva.com 
+twitter: https://twitter.com/spectatorindex
+
