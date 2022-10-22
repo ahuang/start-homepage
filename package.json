@@ -2,9 +2,7 @@
   "private": true,
   "scripts": {
     "start": "umi dev",
-    "build": "umi build",
-    "publish": "gh-pages -d dist",
-    "deploy": "npm run build && gh-pages -d dist"
+    "deploy": "umi build && gh-pages -d dist"
   },
   "devDependencies": {
     "umi": "2.x",
