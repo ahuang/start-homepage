@@ -3,6 +3,10 @@
     "title": "搜索",
     "list":[
         {
+            "name": "yandex搜索 俄罗斯",
+            "url": "https://yandex.com/",
+            "icon": "yandex.ico"
+        },{
             "name": "Google",
             "url": "https://www.google.com/",
             "icon": "google.ico"

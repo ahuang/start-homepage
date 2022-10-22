@@ -3,6 +3,11 @@
     "title": "工作",
     "list":[
         {
+            "name": "远程",
+            "url": "https://github.com/LinuxSuRen/remote-jobs-in-china",
+            "icon": "remotejob.ico"
+        },
+        {
             "name": "indeed",
             "url": "https://www.indeed.com/jobs?q=front%20end&l=%20remote&vjk=a96c70fffe4ed1f2",
             "icon": "indeed.ico"

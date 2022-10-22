@@ -3,6 +3,14 @@
     "title": "休闲",
     "list":[
         {
+            "name": "音乐下载",
+            "url": "https://www.musicenc.com/",
+            "icon": "misicenc.ico"
+        },{
+            "name": "背景音乐和歌声分离",
+            "url": "https://vocalremover.org/",
+            "icon": "vocalremover.ico"
+        },{
             "name": "轻松一刻",
             "url": "https://c.m.163.com/news/sub/T1348654628034.html",
             "icon": "relax.ico"

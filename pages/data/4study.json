@@ -3,6 +3,14 @@
     "title": "学习",
     "list":[
         {
+            "name": "lydia",
+            "url": "http://zhouzhoujiang.com/article/list",
+            "icon": "lydia.ico"
+        },{
+            "name": "beng07231-issue",
+            "url": "https://github.com/beng07231/study/issues",
+            "icon": "beng07231.ico"
+        },{
             "name": "leetcode-cn",
             "url": "https://leetcode-cn.com/problem-list/2cktkvj/",
             "icon": "leetcode.ico"
