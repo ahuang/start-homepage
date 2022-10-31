@@ -3,14 +3,21 @@
     "title": "工具",
     "list": [
         {
+            "name": "snipaste",
+            "url": "https://www.snipaste.com/",
+            "icon": "snipaste.ico"
+        },
+        {
             "name": "绘图canva",
             "url": "https://www.canva.com/",
             "icon": "canva.ico"
-        },{
+        },
+        {
             "name": "正则表达式",
             "url": "https://regex101.com/",
             "icon": "regexp.ico"
-        },{
+        },
+        {
             "name": "plantuml",
             "url": "https://plantuml.com/zh/sequence-diagram",
             "icon": "plantuml.ico"
