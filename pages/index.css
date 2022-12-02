@@ -45,3 +45,7 @@ body{
 .wrap .highlight{
   background-color: gold;
 }
+
+/* img {
+  filter: grayscale(100%);
+} */
