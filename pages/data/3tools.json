@@ -76,11 +76,6 @@
             "name": "gif压缩",
             "url": "https://www.tutieshi.com/",
             "icon": "tutieshi.ico"
-        },
-        {
-            "name": "LibCyber",
-            "url": "https://baiducdn-global-696ce6ed-768f-4bb5-8593-743124f09df5.libcyber2020.xyz/nodeList",
-            "icon": "libcyber.ico"
         }
     ]
 }
