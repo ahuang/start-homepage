@@ -18,7 +18,7 @@ handbook 学英语不错  https://thevalleyofcode.com/
 工具 网络剪贴板 https://netcut.cn/hml
 medium https://medium.com/@unknowoneboy
 儿童学编程 https://code.org/
-
+今日bing https://www.todaybing.com/today.html  https://bing.ioliu.cn
 
 
 7 个免登录、打开即用的白板应用
