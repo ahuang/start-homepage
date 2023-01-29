@@ -3,6 +3,22 @@
     "title": "休闲",
     "list":[
         {
+            "name": "youtube",
+            "url": "http://youtube.com/",
+            "icon": "youtube.ico"
+        },{
+            "name": "bing壁纸",
+            "url": "https://bing.ioliu.cn/?p=14",
+            "icon": "bing_bizhi.ico"
+        },{
+            "name": "wallhaven",
+            "url": "https://wallhaven.cc/",
+            "icon": "wallhaven.ico"
+        },{
+            "name": "堆糖",
+            "url": "https://m.duitang.com/",
+            "icon": "duitang.ico"
+        },{
             "name": "音乐下载",
             "url": "https://www.musicenc.com/",
             "icon": "misicenc.ico"

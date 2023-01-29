@@ -3,6 +3,14 @@
     "title": "资讯",
     "list":[
         {
+            "name": "bing",
+            "url": "https://cn.bing.com/",
+            "icon": "bing2.ico"
+        },{
+            "name": "byr",
+            "url": "https://bbs.byr.cn/#!board/WorkLife",
+            "icon": "byr.ico"
+        },{
             "name": "阮一峰",
             "url": "http://www.ruanyifeng.com/blog/archives.html",
             "icon": "ryf.ico"
@@ -23,10 +31,6 @@
             "name": "后续",
             "url": "https://houxu.app/",
             "icon": "houxu.ico"
-        },{
-            "name": "byr",
-            "url": "https://bbs.byr.cn/#!board/WorkLife",
-            "icon": "byr.ico"
         },{
             "name": "36氪",
             "url": "https://36kr.com/newsflashes",
