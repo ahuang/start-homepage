@@ -13,7 +13,7 @@ import alipay from './data/10alipay.json';
 
 export default function() {
   const renderContent = () =>{
-    const data = [jobs, news,search, tools, study,english,fun,vue,react,wechat, alipay];
+    const data = [news,search, tools, study,english,fun,vue,react,wechat, alipay,jobs];
     // const data = [news,search, tools, study,english,fun,vue,react,wechat, alipay];
     const blocks = data.map(d =>{
       const list = d.list.map((m,i) =>{

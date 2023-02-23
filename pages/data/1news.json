@@ -3,6 +3,10 @@
     "title": "资讯",
     "list":[
         {
+            "name": "mmx",
+            "url": "https://mmxlife.vercel.app/",
+            "icon": "mmx.ico"
+        },{
             "name": "bing",
             "url": "https://cn.bing.com/",
             "icon": "bing2.ico"
