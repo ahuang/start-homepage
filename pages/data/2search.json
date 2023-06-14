@@ -11,6 +11,10 @@
             "url": "https://www.google.com/",
             "icon": "google.ico"
         },{
+            "name": "chatgpt",
+            "url": "https://chat.openai.com/chat",
+            "icon": "chatgpt.ico"
+        },{
             "name": "g363",
             "url": "https://g363.guom.site/",
             "icon": "g363.ico"

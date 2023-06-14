@@ -6,6 +6,10 @@
             "name": "snipaste",
             "url": "https://www.snipaste.com/",
             "icon": "snipaste.ico"
+        },{
+            "name": "网络粘贴板",
+            "url": "https://netcut.cn/hml",
+            "icon": "netcut.ico"
         },
         {
             "name": "绘图canva",

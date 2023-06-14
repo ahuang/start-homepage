@@ -7,6 +7,14 @@
             "url": "https://mmxlife.vercel.app/",
             "icon": "mmx.ico"
         },{
+            "name": "v2ex",
+            "url": "https://us.v2ex.com/",
+            "icon": "v2ex.ico"
+        },{
+            "name": "toutiao",
+            "url": "https://www.toutiao.com/{",
+            "icon": "toutiao.ico"
+        },{
             "name": "bing",
             "url": "https://cn.bing.com/",
             "icon": "bing2.ico"
@@ -30,10 +38,6 @@
             "name": "19楼",
             "url": "https://www.19lou.com/",
             "icon": "19lou.ico"
-        },{
-            "name": "chatgpt",
-            "url": "https://chat.openai.com/chat",
-            "icon": "chatgpt.ico"
         },{
             "name": "cntimes",
             "url": "https://cn.nytimes.com/",
