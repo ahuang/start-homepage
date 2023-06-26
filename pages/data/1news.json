@@ -3,9 +3,17 @@
     "title": "资讯",
     "list":[
         {
-            "name": "mmx",
+            "name": "mmxlife",
             "url": "https://mmxlife.vercel.app/",
-            "icon": "mmx.ico"
+            "icon": "mmxlife.ico"
+        },{
+            "name": "mmxsw",
+            "url": "https://mmxsw.vercel.app/",
+            "icon": "mmxsw.ico"
+        },{
+            "name": "mmxeng",
+            "url": "https://mmxe g.vercel.app/",
+            "icon": "mmxeng.ico"
         },{
             "name": "v2ex",
             "url": "https://us.v2ex.com/",
