@@ -3,6 +3,14 @@
     "title": "资讯",
     "list":[
         {
+            "name": "zc",
+            "url": "https://www.zhongcai.com/",
+            "icon": "zc.ico"
+        },{
+            "name": "中国新闻网",
+            "url": "https://www.chinanews.com.cn/",
+            "icon": "chinanews.ico"
+        },{
             "name": "mmxlife",
             "url": "https://mmxlife.vercel.app/",
             "icon": "mmxlife.ico"
