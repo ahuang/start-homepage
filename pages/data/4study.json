@@ -3,6 +3,10 @@
     "title": "学习",
     "list":[
         {
+            "name": "古诗文",
+            "url": "https://www.gushiwen.cn/",
+            "icon": "gushici.ico"
+        },{
             "name": "gjxq",
             "url": "http://www.zjsqlxh.com/guojixiangqi/gjxqgg/",
             "icon": "gjxq.ico"
