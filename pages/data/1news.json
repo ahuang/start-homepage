@@ -3,14 +3,6 @@
     "title": "资讯",
     "list":[
         {
-            "name": "zc",
-            "url": "https://www.zhongcai.com/",
-            "icon": "zc.ico"
-        },{
-            "name": "中国新闻网",
-            "url": "https://www.chinanews.com.cn/",
-            "icon": "chinanews.ico"
-        },{
             "name": "mmxlife",
             "url": "https://mmxlife.vercel.app/",
             "icon": "mmxlife.ico"
@@ -22,6 +14,18 @@
             "name": "mmxeng",
             "url": "https://mmxeng.vercel.app/",
             "icon": "mmxeng.ico"
+        },{
+            "name": "科技日报",
+            "url": "http://digitalpaper.stdaily.com/http_www.kjrb.com/kjrb/html/2023-09/18/node_7.htm",
+            "icon": "science-news.ico"
+        },{
+            "name": "zc",
+            "url": "https://www.zhongcai.com/",
+            "icon": "zc.ico"
+        },{
+            "name": "中国新闻网",
+            "url": "https://www.chinanews.com.cn/",
+            "icon": "chinanews.ico"
         },{
             "name": "v2ex",
             "url": "https://us.v2ex.com/",

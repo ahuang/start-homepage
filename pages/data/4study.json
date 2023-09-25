@@ -3,6 +3,10 @@
     "title": "学习",
     "list":[
         {
+            "name": "儿童学编程",
+            "url": "https://studio.code.org/courses",
+            "icon": "code.ico"
+        },{
             "name": "古诗文",
             "url": "https://www.gushiwen.cn/",
             "icon": "gushici.ico"

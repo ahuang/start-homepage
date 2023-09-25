@@ -3,6 +3,10 @@
     "title": "工具",
     "list": [
         {
+            "name": "api",
+            "url": "http://api.uomg.com/",
+            "icon": "api-uomg.ico"
+        },{
             "name": "snipaste",
             "url": "https://www.snipaste.com/",
             "icon": "snipaste.ico"
