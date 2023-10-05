@@ -3,6 +3,14 @@
     "title": "学习",
     "list":[
         {
+            "name": "学乡音",
+            "url": "https://web.xiangyin.mobi/",
+            "icon": "xiangyin.ico"
+        },{
+            "name": "读名著",
+            "url": "https://web.duoreader.cn/index",
+            "icon": "duoreader.ico"
+        },{
             "name": "读典籍",
             "url": "https://web.dudianji.com/",
             "icon": "dudianji.ico"
