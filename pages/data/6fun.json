@@ -3,6 +3,10 @@
     "title": "休闲",
     "list":[
         {
+            "name": "appsco",
+            "url": "https://appsco.pe/",
+            "icon": "appsco.ico"
+        },{
             "name": "youtube",
             "url": "http://youtube.com/",
             "icon": "youtube.ico"
