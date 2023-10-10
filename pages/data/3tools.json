@@ -51,21 +51,6 @@
             "icon": "weixin.ico"
         },
         {
-            "name": "github",
-            "url": "https://www.github.com/",
-            "icon": "github.ico"
-        },
-        {
-            "name": "githubDns",
-            "url": "http://tool.chinaz.com/dns?type=1&host=www.github.com&ip=",
-            "icon": "githubDns.ico"
-        },
-        {
-            "name": "gitee",
-            "url": "https://gitee.com/",
-            "icon": "gitee.ico"
-        },
-        {
             "name": "阿里矢量图库",
             "url": "https://www.iconfont.cn/?spm=a313x.7781069.1998910419.d4d0a486a",
             "icon": "alitool.ico"

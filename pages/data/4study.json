@@ -3,6 +3,10 @@
     "title": "学习",
     "list":[
         {
+            "name": "据意查句",
+            "url": "https://wantquotes.net/",
+            "icon": "wantquotes.ico"
+        },{
             "name": "学乡音",
             "url": "https://web.xiangyin.mobi/",
             "icon": "xiangyin.ico"
