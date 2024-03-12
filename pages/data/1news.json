@@ -15,6 +15,18 @@
             "url": "https://mmxeng.vercel.app/",
             "icon": "mmxeng.ico"
         },{
+            "name": "路透社",
+            "url": "https://www.reuters.com/world/",
+            "icon": "reuters.ico"
+        },{
+            "name": "法广",
+            "url": "https://www.rfi.fr/cn/%E4%B8%AD%E5%9B%BD/",
+            "icon": "rfi.ico"
+        },{
+            "name": "abc澳大利亚",
+            "url": "https://www.abc.net.au/news/chinese",
+            "icon": "abc.au.ico"
+        },{
             "name": "科技日报",
             "url": "http://digitalpaper.stdaily.com/http_www.kjrb.com/kjrb/html/2023-09/18/node_7.htm",
             "icon": "science-news.ico"

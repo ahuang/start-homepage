@@ -3,6 +3,14 @@
     "title": "休闲",
     "list":[
         {
+            "name": "tiktok",
+            "url": "https://www.tiktok.com",
+            "icon": "tiktok.ico"
+        },{
+            "name": "youtube",
+            "url": "http://youtube.com/",
+            "icon": "youtube.ico"
+        },{
             "name": "bing壁纸",
             "url": "https://bing.ioliu.cn/?p=14",
             "icon": "bing_bizhi.ico"
