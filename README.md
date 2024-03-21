@@ -9,13 +9,6 @@ npm install
 npm run deploy (include build)   
 https://ahuang.github.io/start-homepage   
 
-<<<<<<< HEAD
-=======
 
-
-扫雷游戏  https://proxx.app/
-
-历史视频 https://www.historyline.online/
-
-start-homepage https://www.v2ex.com/?tab=hot
->>>>>>> 5d71161 (smile 20240312)
+19楼小学教育
+https://www.19lou.com/forum-263-1.html
