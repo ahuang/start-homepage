@@ -24,10 +24,11 @@ const saveStatus = reactive<{ loading: boolean; message: string }>({
 });
 
 const isDev = import.meta.env.DEV;
+const baseUrl = import.meta.env.BASE_URL;
 
 function iconUrl(icon?: string) {
   if (!icon) return '';
-  return `/start-homepage/icons/${icon}`;
+  return `${baseUrl}icons/${icon}`;
 }
 
 function addSection() {
@@ -202,8 +203,8 @@ function cancelEdit() {
         </h2>
       </header>
       <div style="display: flex; gap: 16px; flex-wrap: wrap; justify-content: center">
-        <img src="/start-homepage/wechat/public.jpg" width="260" />
-        <img src="/start-homepage/wechat/miniapp.jpg" width="260" />
+        <img :src="`${baseUrl}wechat/public.jpg`" width="260" alt="公众号" />
+        <img :src="`${baseUrl}wechat/miniapp.jpg`" width="260" alt="小程序" />
       </div>
     </section>
   </div>
