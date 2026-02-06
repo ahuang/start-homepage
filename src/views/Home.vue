@@ -1,14 +1,5 @@
 <script setup lang="ts">
-import jobs from '../../pages/data/1jobs.json';
-import news from '../../pages/data/1news.json';
-import search from '../../pages/data/2search.json';
-import tools from '../../pages/data/3tools.json';
-import study from '../../pages/data/4study.json';
-import english from '../../pages/data/5english.json';
-import fun from '../../pages/data/6fun.json';
-import vueLinks from '../../pages/data/7vue.json';
-import reactLinks from '../../pages/data/8react.json';
-import wechat from '../../pages/data/9wechat.json';
+import sectionsData from '../../pages/data/index.json';
 
 type LinkItem = {
   name: string;
@@ -23,19 +14,7 @@ type Section = {
   list: LinkItem[];
 };
 
-const sections: Section[] = [
-  news,
-  search,
-  tools,
-  study,
-  english,
-  fun,
-  vueLinks,
-  reactLinks,
-  wechat,
-  alipay,
-  jobs,
-];
+const sections: Section[] = sectionsData as Section[];
 
 function iconUrl(icon?: string) {
   if (!icon) return '';
