@@ -4,11 +4,6 @@
     "title": "资讯",
     "list": [
       {
-        "name": "路透社",
-        "url": "https://www.reuters.com/world/",
-        "icon": "reuters.ico"
-      },
-      {
         "name": "法广",
         "url": "https://www.rfi.fr/cn/%E4%B8%AD%E5%9B%BD/",
         "icon": "rfi.ico"

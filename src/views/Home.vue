@@ -16,12 +16,11 @@ type Section = {
 };
 
 const GIST_ID = import.meta.env.VITE_GIST_ID;
-const GITHUB_TOKEN = import.meta.env.VITE_GITHUB_TOKEN;
 const GIST_FILENAME = import.meta.env.VITE_GIST_FILENAME || 'homepage.json';
-console.log('GIST_ID:',GIST_ID)
-console.log('GITHUB_TOKEN:',GITHUB_TOKEN)
-const hasGist = !!(GIST_ID && GITHUB_TOKEN);
-
+const hasGist = !!GIST_ID;
+const GIST_TOKEN_STORAGE_KEY = 'start-homepage-gist-token';
+const gistToken = ref<string | null>(null);
+console.log('hasGist',hasGist)
 const defaultSections = sectionsData as Section[];
 const isEditMode = ref(false);
 const sections = ref<Section[]>([...defaultSections]);
@@ -47,10 +46,8 @@ async function loadFromGist() {
     const res = await fetch(`https://api.github.com/gists/${GIST_ID}`, {
       headers: {
         Accept: 'application/vnd.github+json',
-        Authorization: `Bearer ${GITHUB_TOKEN}`,
       },
     });
-    console.log('res:',res)
     if (!res.ok) {
       if (res.status === 404) {
         loadStatus.error = '';
@@ -74,7 +71,9 @@ async function loadFromGist() {
 }
 
 onMounted(() => {
-  console.log('hasGist:',hasGist)
+  if (typeof window !== 'undefined') {
+    gistToken.value = window.localStorage.getItem(GIST_TOKEN_STORAGE_KEY);
+  }
   if (hasGist) {
     loadFromGist();
   } else {
@@ -116,11 +115,21 @@ async function save() {
   saveStatus.message = '';
   try {
     if (hasGist) {
+      if (!gistToken.value) {
+        const input = window.prompt(
+          '请输入 GitHub Token（仅保存在本地浏览器，用于更新 Gist）'
+        );
+        if (!input) {
+          throw new Error('未提供 Token，保存已取消');
+        }
+        gistToken.value = input.trim();
+        window.localStorage.setItem(GIST_TOKEN_STORAGE_KEY, gistToken.value);
+      }
       const res = await fetch(`https://api.github.com/gists/${GIST_ID}`, {
         method: 'PATCH',
         headers: {
           Accept: 'application/vnd.github+json',
-          Authorization: `Bearer ${GITHUB_TOKEN}`,
+          Authorization: `Bearer ${gistToken.value}`,
           'Content-Type': 'application/json',
         },
         body: JSON.stringify({
