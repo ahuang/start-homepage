@@ -1,5 +1,5 @@
 <script setup lang="ts">
-import { ref, reactive, onMounted } from 'vue';
+import { ref, reactive, onMounted, computed } from 'vue';
 import sectionsData from '../../pages/data/index.json';
 
 type LinkItem = {
@@ -7,12 +7,14 @@ type LinkItem = {
   url: string;
   icon?: string;
   highlight?: boolean;
+  _hidden?: boolean; // 软删除标记：true=不可见
 };
 
 type Section = {
   key: string;
   title: string;
   list: LinkItem[];
+  _hidden?: boolean; // 软删除标记：true=不可见
 };
 
 const GIST_ID = import.meta.env.VITE_GIST_ID;
@@ -24,6 +26,12 @@ console.log('hasGist',hasGist)
 const defaultSections = sectionsData as Section[];
 const isEditMode = ref(false);
 const sections = ref<Section[]>([...defaultSections]);
+// 仅用于展示的列表：过滤掉被标记隐藏的分组
+const visibleSections = computed(() =>
+  sections.value
+    .map((section, index) => ({ section, index }))
+    .filter(({ section }) => !section._hidden)
+);
 const loadStatus = reactive<{ loading: boolean; error: string }>({
   loading: true,
   error: '',
@@ -95,7 +103,11 @@ function addSection() {
 }
 
 function removeSection(index: number) {
-  sections.value.splice(index, 1);
+  // 软删除：仅打标，不真正删除
+  const target = sections.value[index];
+  if (target) {
+    target._hidden = true;
+  }
 }
 
 function addLink(sectionIndex: number) {
@@ -107,7 +119,12 @@ function addLink(sectionIndex: number) {
 }
 
 function removeLink(sectionIndex: number, linkIndex: number) {
-  sections.value[sectionIndex].list.splice(linkIndex, 1);
+  const sec = sections.value[sectionIndex];
+  if (!sec) return;
+  const target = sec.list[linkIndex];
+  if (target) {
+    target._hidden = true;
+  }
 }
 
 async function save() {
@@ -218,20 +235,20 @@ function restoreDefault() {
 
     <section class="section-grid">
       <article
-        v-for="(section, sIdx) in sections"
-        :key="section.key"
+        v-for="item in visibleSections"
+        :key="item.section.key"
         class="section-card"
       >
         <header class="section-header">
           <template v-if="isEditMode">
             <div class="section-edit-fields">
               <input
-                v-model="section.title"
+                v-model="item.section.title"
                 class="edit-input"
                 placeholder="标题"
               />
               <input
-                v-model="section.key"
+                v-model="item.section.key"
                 class="edit-input edit-input-sm"
                 placeholder="key"
               />
@@ -240,14 +257,14 @@ function restoreDefault() {
               <button
                 class="btn-icon"
                 title="添加链接"
-                @click="addLink(sIdx)"
+                @click="addLink(item.index)"
               >
                 +
               </button>
               <button
                 class="btn-icon btn-icon-danger"
                 title="删除分组"
-                @click="removeSection(sIdx)"
+                @click="removeSection(item.index)"
               >
                 ×
               </button>
@@ -255,40 +272,45 @@ function restoreDefault() {
           </template>
           <template v-else>
             <h2 class="section-title">
-              <span>{{ section.title }}</span>
-              <span class="section-key">{{ section.key }}</span>
+              <span>{{ item.section.title }}</span>
+              <span class="section-key">{{ item.section.key }}</span>
             </h2>
           </template>
         </header>
 
         <div class="links-grid">
-          <template v-for="(item, lIdx) in section.list" :key="item.url + lIdx">
+          <template
+            v-for="linkItem in item.section.list
+              .map((link, index) => ({ link, index }))
+              .filter(({ link }) => !link._hidden)"
+            :key="linkItem.link.url + linkItem.index"
+          >
             <a
               v-if="!isEditMode"
               class="link-chip"
-              :href="item.url"
+              :href="linkItem.link.url"
               target="_blank"
               rel="noreferrer"
             >
               <span
-                v-if="item.icon"
+                v-if="linkItem.link.icon"
                 class="link-icon"
-                :style="{ backgroundImage: `url(${iconUrl(item.icon)})` }"
+                :style="{ backgroundImage: `url(${iconUrl(linkItem.link.icon)})` }"
               />
-              <span class="link-label">{{ item.name }}</span>
+              <span class="link-label">{{ linkItem.link.name }}</span>
             </a>
             <div v-else class="link-edit">
-              <input v-model="item.name" class="edit-input" placeholder="名称" />
-              <input v-model="item.url" class="edit-input" placeholder="URL" />
+              <input v-model="linkItem.link.name" class="edit-input" placeholder="名称" />
+              <input v-model="linkItem.link.url" class="edit-input" placeholder="URL" />
               <input
-                v-model="item.icon"
+                v-model="linkItem.link.icon"
                 class="edit-input edit-input-sm"
                 placeholder="icon"
               />
               <button
                 class="btn-icon btn-icon-danger"
                 title="删除"
-                @click="removeLink(sIdx, lIdx)"
+                @click="removeLink(item.index, linkItem.index)"
               >
                 ×
               </button>
