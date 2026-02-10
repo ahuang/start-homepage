@@ -1,5 +1,5 @@
 <script setup lang="ts">
-import { ref, reactive } from 'vue';
+import { ref, reactive, onMounted } from 'vue';
 import sectionsData from '../../pages/data/index.json';
 
 type LinkItem = {
@@ -15,8 +15,20 @@ type Section = {
   list: LinkItem[];
 };
 
+const GIST_ID = import.meta.env.VITE_GIST_ID;
+const GITHUB_TOKEN = import.meta.env.VITE_GITHUB_TOKEN;
+const GIST_FILENAME = import.meta.env.VITE_GIST_FILENAME || 'homepage.json';
+console.log('GIST_ID:',GIST_ID)
+console.log('GITHUB_TOKEN:',GITHUB_TOKEN)
+const hasGist = !!(GIST_ID && GITHUB_TOKEN);
+
+const defaultSections = sectionsData as Section[];
 const isEditMode = ref(false);
-const sections = ref<Section[]>([...(sectionsData as Section[])]);
+const sections = ref<Section[]>([...defaultSections]);
+const loadStatus = reactive<{ loading: boolean; error: string }>({
+  loading: true,
+  error: '',
+});
 
 const saveStatus = reactive<{ loading: boolean; message: string }>({
   loading: false,
@@ -25,6 +37,50 @@ const saveStatus = reactive<{ loading: boolean; message: string }>({
 
 const isDev = import.meta.env.DEV;
 const baseUrl = import.meta.env.BASE_URL;
+
+async function loadFromGist() {
+  if (!hasGist) {
+    loadStatus.loading = false;
+    return;
+  }
+  try {
+    const res = await fetch(`https://api.github.com/gists/${GIST_ID}`, {
+      headers: {
+        Accept: 'application/vnd.github+json',
+        Authorization: `Bearer ${GITHUB_TOKEN}`,
+      },
+    });
+    console.log('res:',res)
+    if (!res.ok) {
+      if (res.status === 404) {
+        loadStatus.error = '';
+        return;
+      }
+      throw new Error(`HTTP ${res.status}`);
+    }
+    const json = await res.json();
+    const file = json.files?.[GIST_FILENAME];
+    if (file?.content) {
+      const data = JSON.parse(file.content);
+      if (Array.isArray(data) && data.length > 0) {
+        sections.value = data;
+      }
+    }
+  } catch {
+    loadStatus.error = 'Gist 读取失败，使用本地配置';
+  } finally {
+    loadStatus.loading = false;
+  }
+}
+
+onMounted(() => {
+  console.log('hasGist:',hasGist)
+  if (hasGist) {
+    loadFromGist();
+  } else {
+    loadStatus.loading = false;
+  }
+});
 
 function iconUrl(icon?: string) {
   if (!icon) return '';
@@ -59,7 +115,28 @@ async function save() {
   saveStatus.loading = true;
   saveStatus.message = '';
   try {
-    if (isDev) {
+    if (hasGist) {
+      const res = await fetch(`https://api.github.com/gists/${GIST_ID}`, {
+        method: 'PATCH',
+        headers: {
+          Accept: 'application/vnd.github+json',
+          Authorization: `Bearer ${GITHUB_TOKEN}`,
+          'Content-Type': 'application/json',
+        },
+        body: JSON.stringify({
+          files: {
+            [GIST_FILENAME]: {
+              content: JSON.stringify(sections.value, null, 2),
+            },
+          },
+        }),
+      });
+      if (!res.ok) {
+        const err = await res.json().catch(() => ({}));
+        throw new Error(err?.message || `HTTP ${res.status}`);
+      }
+      saveStatus.message = '已保存到 Gist';
+    } else if (isDev) {
       const res = await fetch('/api/save-data', {
         method: 'POST',
         headers: { 'Content-Type': 'application/json' },
@@ -89,27 +166,43 @@ async function save() {
   }
 }
 
+let editSnapshot: Section[] = [];
+
 function cancelEdit() {
   isEditMode.value = false;
-  sections.value = [...(sectionsData as Section[])];
+  sections.value = JSON.parse(JSON.stringify(editSnapshot));
+}
+
+function restoreDefault() {
+  sections.value = JSON.parse(JSON.stringify(defaultSections));
+  loadStatus.error = '';
+  editSnapshot = JSON.parse(JSON.stringify(defaultSections));
 }
 </script>
 
 <template>
   <div class="page">
+    <div v-if="loadStatus.loading" class="load-hint">加载中...</div>
+    <div v-else-if="loadStatus.error" class="load-hint load-error">
+      {{ loadStatus.error }}
+      <button class="btn btn-ghost btn-sm" @click="restoreDefault">使用本地</button>
+    </div>
     <div v-if="isEditMode" class="edit-toolbar">
       <span class="edit-toolbar-label">编辑模式</span>
       <button class="btn btn-primary" :disabled="saveStatus.loading" @click="save">
-        {{ saveStatus.loading ? '保存中...' : '保存到 index.json' }}
+        {{ saveStatus.loading ? '保存中...' : hasGist ? '保存到 Gist' : '保存' }}
       </button>
       <button class="btn btn-secondary" @click="addSection">添加分组</button>
+      <button v-if="hasGist" class="btn btn-ghost" @click="restoreDefault">
+        恢复默认
+      </button>
       <button class="btn btn-ghost" @click="cancelEdit">取消</button>
       <span v-if="saveStatus.message" class="save-status">{{
         saveStatus.message
       }}</span>
     </div>
     <div v-else class="edit-toolbar">
-      <button class="btn btn-ghost btn-sm" @click="isEditMode = true">
+      <button class="btn btn-ghost btn-sm" @click="editSnapshot = JSON.parse(JSON.stringify(sections)); isEditMode = true">
         编辑
       </button>
     </div>
@@ -341,5 +434,18 @@ function cancelEdit() {
 .save-status {
   font-size: 12px;
   color: var(--accent);
+}
+
+.load-hint {
+  padding: 8px 12px;
+  font-size: 13px;
+  color: var(--text-muted);
+}
+
+.load-error {
+  color: #f87171;
+  display: flex;
+  align-items: center;
+  gap: 8px;
 }
 </style>
