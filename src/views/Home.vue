@@ -26,6 +26,7 @@ console.log('hasGist',hasGist)
 const defaultSections = sectionsData as Section[];
 const isEditMode = ref(false);
 const sections = ref<Section[]>([...defaultSections]);
+const collapsedIndices = ref<Set<number>>(new Set());
 // 仅用于展示的列表：过滤掉被标记隐藏的分组
 const visibleSections = computed(() =>
   sections.value
@@ -118,6 +119,17 @@ function addLink(sectionIndex: number) {
   });
 }
 
+function toggleCollapse(index: number) {
+  const next = new Set(collapsedIndices.value);
+  if (next.has(index)) next.delete(index);
+  else next.add(index);
+  collapsedIndices.value = next;
+}
+
+function isCollapsed(index: number) {
+  return collapsedIndices.value.has(index);
+}
+
 function removeLink(sectionIndex: number, linkIndex: number) {
   const sec = sections.value[sectionIndex];
   if (!sec) return;
@@ -196,6 +208,7 @@ let editSnapshot: Section[] = [];
 
 function cancelEdit() {
   isEditMode.value = false;
+  collapsedIndices.value = new Set();
   sections.value = JSON.parse(JSON.stringify(editSnapshot));
 }
 
@@ -239,12 +252,19 @@ function restoreDefault() {
         :key="item.section.key"
         class="section-card"
       >
-        <header class="section-header">
+        <header
+          class="section-header"
+          :class="{ 'is-collapsible': isEditMode }"
+          @click="isEditMode && toggleCollapse(item.index)"
+        >
           <template v-if="isEditMode">
             <div class="section-edit-fields">
               <span>{{ item.section.title }}</span>
-              <span>{{ item.section.key }}</span>
+              <span class="section-key">{{ item.section.key }}</span>
             </div>
+            <span class="collapse-icon" :title="isCollapsed(item.index) ? '展开' : '折叠'">
+              {{ isCollapsed(item.index) ? '▶' : '▼' }}
+            </span>
           </template>
           <template v-else>
             <h2 class="section-title">
@@ -254,7 +274,7 @@ function restoreDefault() {
           </template>
         </header>
 
-        <div class="links-grid">
+        <div v-show="!isEditMode || !isCollapsed(item.index)" class="links-grid">
           <template
             v-for="linkItem in item.section.list
               .map((link, index) => ({ link, index }))
@@ -277,7 +297,7 @@ function restoreDefault() {
             </a>
             <div v-else class="link-edit">
               <input v-model="linkItem.link.name" class="edit-input" placeholder="名称" />
-              <input v-model="linkItem.link.url" class="edit-input" placeholder="URL" />
+              <input v-model="linkItem.link.url" class="edit-input edit-input-url" placeholder="URL" />
               <button
                 class="btn-icon btn-icon-danger"
                 title="删除"
@@ -380,6 +400,29 @@ function restoreDefault() {
   color: #f87171;
 }
 
+.btn-collapse {
+  width: 24px;
+  height: 24px;
+  padding: 0;
+  border: none;
+  background: transparent;
+  color: var(--text-muted);
+  font-size: 10px;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+}
+
+.btn-collapse:hover {
+  color: var(--accent);
+}
+
+.section-header.is-collapsible {
+  cursor: default;
+}
+
 .section-edit-fields {
   display: flex;
   align-items: center;
@@ -423,10 +466,14 @@ function restoreDefault() {
   background: rgba(15, 23, 42, 0.4);
 }
 
-.link-edit .edit-input {
-  flex: 1;
+.link-edit .edit-input {  
   min-width: 80px;
 }
+
+.link-edit .edit-input-url {
+  flex: 1;
+}
+
 
 .link-edit .edit-input-sm {
   width: 70px;
