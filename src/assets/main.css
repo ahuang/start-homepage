@@ -83,6 +83,20 @@ body {
   display: flex;
   flex-direction: column;
   gap: 14px;
+  align-items: flex-start; /* 查看时：卡片宽度按内容自适应 */
+}
+
+.section-grid.is-edit {
+  align-items: stretch; /* 编辑时：卡片占满一行 */
+}
+
+.section-grid .section-card {
+  width: fit-content;
+  min-width: 0;
+}
+
+.section-grid.is-edit .section-card {
+  width: 100%; /* 编辑时：卡片全宽 */
 }
 
 .section-card {
@@ -119,11 +133,18 @@ body {
   border: 1px solid rgba(56, 189, 248, 0.5);
 }
 
-/* 每个链接一行一个 */
+/* 查看时：链接按内容自适应排列（可换行） */
 .links-grid {
   display: flex;
-  flex-direction: column;
+  flex-wrap: wrap;
+  flex-direction: row;
   gap: 8px;
+}
+
+/* 编辑时：每个链接一行一个 */
+.section-grid.is-edit .links-grid {
+  flex-direction: column;
+  flex-wrap: nowrap;
 }
 
 .link-chip {

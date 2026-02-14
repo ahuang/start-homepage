@@ -233,7 +233,7 @@ function restoreDefault() {
       </button>
     </div>
 
-    <section class="section-grid">
+    <section class="section-grid" :class="{ 'is-edit': isEditMode }">
       <article
         v-for="item in visibleSections"
         :key="item.section.key"
