@@ -400,27 +400,19 @@ function restoreDefault() {
   color: #f87171;
 }
 
-.btn-collapse {
-  width: 24px;
-  height: 24px;
-  padding: 0;
-  border: none;
-  background: transparent;
-  color: var(--text-muted);
-  font-size: 10px;
-  cursor: pointer;
-  display: flex;
-  align-items: center;
-  justify-content: center;
+.collapse-icon {
+  margin-left: auto;
   flex-shrink: 0;
-}
-
-.btn-collapse:hover {
-  color: var(--accent);
+  font-size: 10px;
+  color: var(--text-muted);
 }
 
 .section-header.is-collapsible {
-  cursor: default;
+  cursor: pointer;
+}
+
+.section-header.is-collapsible:hover .collapse-icon {
+  color: var(--accent);
 }
 
 .section-edit-fields {
