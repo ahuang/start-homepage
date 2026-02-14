@@ -78,9 +78,10 @@ body {
   gap: 18px;
 }
 
+/* 每个分组卡片一行一个 */
 .section-grid {
-  display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(220px, 1fr));
+  display: flex;
+  flex-direction: column;
   gap: 14px;
 }
 
@@ -118,16 +119,11 @@ body {
   border: 1px solid rgba(56, 189, 248, 0.5);
 }
 
+/* 每个链接一行一个 */
 .links-grid {
-  display: grid;
-  grid-template-columns: repeat(2, minmax(0, 1fr));
+  display: flex;
+  flex-direction: column;
   gap: 8px;
-}
-
-@media (min-width: 880px) {
-  .links-grid {
-    grid-template-columns: repeat(3, minmax(0, 1fr));
-  }
 }
 
 .link-chip {

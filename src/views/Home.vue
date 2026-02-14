@@ -302,11 +302,6 @@ function restoreDefault() {
             <div v-else class="link-edit">
               <input v-model="linkItem.link.name" class="edit-input" placeholder="名称" />
               <input v-model="linkItem.link.url" class="edit-input" placeholder="URL" />
-              <input
-                v-model="linkItem.link.icon"
-                class="edit-input edit-input-sm"
-                placeholder="icon"
-              />
               <button
                 class="btn-icon btn-icon-danger"
                 title="删除"
