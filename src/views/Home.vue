@@ -218,10 +218,10 @@ function restoreDefault() {
       <button class="btn btn-primary" :disabled="saveStatus.loading" @click="save">
         {{ saveStatus.loading ? '保存中...' : hasGist ? '保存到 Gist' : '保存' }}
       </button>
-      <button class="btn btn-secondary" @click="addSection">添加分组</button>
-      <button v-if="hasGist" class="btn btn-ghost" @click="restoreDefault">
+      <!-- <button class="btn btn-secondary" @click="addSection">添加分组</button> -->
+      <!-- <button v-if="hasGist" class="btn btn-ghost" @click="restoreDefault">
         恢复默认
-      </button>
+      </button> -->
       <button class="btn btn-ghost" @click="cancelEdit">取消</button>
       <span v-if="saveStatus.message" class="save-status">{{
         saveStatus.message
@@ -242,32 +242,8 @@ function restoreDefault() {
         <header class="section-header">
           <template v-if="isEditMode">
             <div class="section-edit-fields">
-              <input
-                v-model="item.section.title"
-                class="edit-input"
-                placeholder="标题"
-              />
-              <input
-                v-model="item.section.key"
-                class="edit-input edit-input-sm"
-                placeholder="key"
-              />
-            </div>
-            <div class="section-actions">
-              <button
-                class="btn-icon"
-                title="添加链接"
-                @click="addLink(item.index)"
-              >
-                +
-              </button>
-              <button
-                class="btn-icon btn-icon-danger"
-                title="删除分组"
-                @click="removeSection(item.index)"
-              >
-                ×
-              </button>
+              <span>{{ item.section.title }}</span>
+              <span>{{ item.section.key }}</span>
             </div>
           </template>
           <template v-else>
