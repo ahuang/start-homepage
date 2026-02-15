@@ -173,7 +173,19 @@ async function save() {
         const err = await res.json().catch(() => ({}));
         throw new Error(err?.message || `HTTP ${res.status}`);
       }
+      loadStatus.loading = true;
+      const json = await res.json();
+      const file = json.files?.[GIST_FILENAME];
+      if (file?.content) {
+        const data = JSON.parse(file.content);
+        if (Array.isArray(data) && data.length > 0) {
+          sections.value = data;
+        }
+      }
+      isEditMode.value = false;
+      collapsedIndices.value = new Set();
       saveStatus.message = '已保存到 Gist';
+      loadStatus.loading = false;
     } else if (isDev) {
       const res = await fetch('/api/save-data', {
         method: 'POST',
