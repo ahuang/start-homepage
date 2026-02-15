@@ -46,6 +46,9 @@ const saveStatus = reactive<{ loading: boolean; message: string }>({
 const isDev = import.meta.env.DEV;
 const baseUrl = import.meta.env.BASE_URL;
 
+// WeChat modal state
+const wechatModalOpen = ref<'public' | 'miniapp' | null>(null);
+
 async function loadFromGist() {
   if (!hasGist) {
     loadStatus.loading = false;
@@ -342,14 +345,39 @@ function restoreDefault() {
     <section class="section-card" style="margin-top: 12px">
       <header class="section-header">
         <h2 class="section-title">
-          <span>微信公众号 & 小程序</span>
+          <span>微信</span>
         </h2>
       </header>
-      <div style="display: flex; gap: 16px; flex-wrap: wrap; justify-content: center">
-        <img :src="`${baseUrl}wechat/public.jpg`" width="260" alt="公众号" />
-        <img :src="`${baseUrl}wechat/miniapp.jpg`" width="260" alt="小程序" />
+      <div style="display: flex; gap: 16px; flex-wrap: wrap; justify-content: flex-start">
+        <button class="wechat-button" @click="wechatModalOpen = 'public'">
+          <span class="wechat-label">公众号</span>
+        </button>
+        <button class="wechat-button" @click="wechatModalOpen = 'miniapp'">
+          <span class="wechat-label">小程序</span>
+        </button>
       </div>
     </section>
+
+    <!-- WeChat QR Code Modal -->
+    <div v-if="wechatModalOpen" class="modal-overlay" @click="wechatModalOpen = null">
+      <div class="modal-content" @click.stop>
+        <button class="modal-close" @click="wechatModalOpen = null">×</button>
+        <div class="modal-body">
+          <img
+            v-if="wechatModalOpen === 'public'"
+            :src="`${baseUrl}wechat/public.jpg`"
+            alt="公众号"
+            class="modal-qrcode"
+          />
+          <img
+            v-else-if="wechatModalOpen === 'miniapp'"
+            :src="`${baseUrl}wechat/miniapp.jpg`"
+            alt="小程序"
+            class="modal-qrcode"
+          />
+        </div>
+      </div>
+    </div>
   </div>
 </template>
 
@@ -522,5 +550,128 @@ function restoreDefault() {
   display: flex;
   align-items: center;
   gap: 8px;
+}
+
+.wechat-button {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  padding: 7px 10px;
+  border-radius: 999px;
+  border: 1px solid rgba(148, 163, 184, 0.55);
+  background: radial-gradient(circle at top left, #111827, #020617);
+  color: var(--text);
+  font-size: 13px;
+  text-decoration: none;
+  cursor: pointer;
+  transition:
+    transform 0.15s ease,
+    box-shadow 0.15s ease,
+    border-color 0.15s ease,
+    background 0.15s ease,
+    color 0.15s ease;
+}
+
+.wechat-button:hover {
+  transform: translateY(-1px);
+  border-color: rgba(56, 189, 248, 0.9);
+  box-shadow: 0 10px 30px rgba(15, 23, 42, 0.8);
+  background: radial-gradient(circle at top left, rgba(56, 189, 248, 0.18), #020617);
+  color: #e0f2fe;
+}
+
+.wechat-button-content {
+  display: flex;
+  align-items: center;
+  gap: 4px;
+}
+
+.wechat-label {
+  font-size: 13px;
+}
+
+.modal-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: rgba(0, 0, 0, 0.6);
+  backdrop-filter: blur(4px);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 1000;
+  animation: fadeIn 0.2s ease;
+}
+
+.modal-content {
+  background: radial-gradient(circle at top left, #1f2937, #020617);
+  border-radius: var(--radius-lg);
+  border: 1px solid var(--border-subtle);
+  box-shadow: 0 20px 60px rgba(0, 0, 0, 0.8);
+  position: relative;
+  max-width: 90vw;
+  max-height: 90vh;
+  animation: slideUp 0.3s ease;
+}
+
+.modal-close {
+  position: absolute;
+  top: 16px;
+  right: 16px;
+  width: 32px;
+  height: 32px;
+  border-radius: 50%;
+  border: none;
+  background: rgba(56, 189, 248, 0.1);
+  color: var(--accent);
+  font-size: 24px;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: all 0.2s ease;
+  z-index: 1001;
+}
+
+.modal-close:hover {
+  background: rgba(56, 189, 248, 0.2);
+  transform: scale(1.1);
+}
+
+.modal-body {
+  padding: 24px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.modal-qrcode {
+  max-width: 400px;
+  max-height: 70vh;
+  width: auto;
+  height: auto;
+  border-radius: 8px;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+@keyframes slideUp {
+  from {
+    transform: translateY(20px);
+    opacity: 0;
+  }
+  to {
+    transform: translateY(0);
+    opacity: 1;
+  }
 }
 </style>

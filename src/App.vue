@@ -8,7 +8,7 @@
       <RouterView />
     </main>
     <footer class="app-footer">
-      <span>Made for personal use · Vue 重构版</span>
+      <span>木木夕还活着</span>
     </footer>
   </div>
 </template>
