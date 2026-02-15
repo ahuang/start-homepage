@@ -112,7 +112,7 @@ function removeSection(index: number) {
 }
 
 function addLink(sectionIndex: number) {
-  sections.value[sectionIndex].list.push({
+  sections.value[sectionIndex].list.unshift({
     name: '新链接',
     url: 'https://',
     icon: '',
@@ -274,6 +274,22 @@ function restoreDefault() {
               <span>{{ item.section.title }}</span>
               <span class="section-key">{{ item.section.key }}</span>
             </div>
+            <div class="section-actions-group">
+              <button
+                class="btn-icon"
+                title="添加链接"
+                @click.stop="addLink(item.index)"
+              >
+                +
+              </button>
+              <button
+                class="btn-icon btn-icon-danger"
+                title="删除分组"
+                @click.stop="removeSection(item.index)"
+              >
+                ×
+              </button>
+            </div>
             <span class="collapse-icon" :title="isCollapsed(item.index) ? '展开' : '折叠'">
               {{ isCollapsed(item.index) ? '▶' : '▼' }}
             </span>
@@ -300,11 +316,11 @@ function restoreDefault() {
               target="_blank"
               rel="noreferrer"
             >
-              <span
+              <!-- <span
                 v-if="linkItem.link.icon"
                 class="link-icon"
                 :style="{ backgroundImage: `url(${iconUrl(linkItem.link.icon)})` }"
-              />
+              /> -->
               <span class="link-label">{{ linkItem.link.name }}</span>
             </a>
             <div v-else class="link-edit">
@@ -442,6 +458,12 @@ function restoreDefault() {
 .section-actions {
   display: flex;
   gap: 4px;
+  flex-shrink: 0;
+}
+
+.section-actions-group {
+  display: flex;
+  gap: 6px;
   flex-shrink: 0;
 }
 
